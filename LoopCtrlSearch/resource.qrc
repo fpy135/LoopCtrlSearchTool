@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resource/loopctrl_ui_green.png</file>
+        <file>resource/loopctrl_search.png</file>
+    </qresource>
+</RCC>

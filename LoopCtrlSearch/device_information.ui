@@ -1,0 +1,4593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>device_information</class>
+ <widget class="QMainWindow" name="device_information">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1354</width>
+    <height>792</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_28">
+    <item row="0" column="0" rowspan="5">
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="minimumSize">
+         <size>
+          <width>191</width>
+          <height>71</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>191</width>
+          <height>71</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>dev id</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_26">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_14">
+           <property name="minimumSize">
+            <size>
+             <width>21</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>21</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>id</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1" colspan="2">
+          <widget class="QLineEdit" name="dev_id">
+           <property name="minimumSize">
+            <size>
+             <width>150</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>6666</width>
+             <height>6666</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="2">
+          <widget class="QLabel" name="label_15">
+           <property name="minimumSize">
+            <size>
+             <width>41</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>51</width>
+             <height>21</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="text">
+            <string>nettype</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="net_type">
+           <property name="minimumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QGroupBox" name="groupBox">
+        <property name="minimumSize">
+         <size>
+          <width>191</width>
+          <height>171</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>191</width>
+          <height>181</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>ETH</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_25">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="minimumSize">
+            <size>
+             <width>41</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>41</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>ip</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="eth_ip">
+           <property name="minimumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Normal</enum>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="dragEnabled">
+            <bool>false</bool>
+           </property>
+           <property name="cursorMoveStyle">
+            <enum>Qt::LogicalMoveStyle</enum>
+           </property>
+           <property name="clearButtonEnabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="minimumSize">
+            <size>
+             <width>41</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>41</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>nettype</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="eth_netmask">
+           <property name="minimumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="frame">
+            <bool>true</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="minimumSize">
+            <size>
+             <width>41</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>41</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>gateway</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="eth_gw">
+           <property name="minimumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="minimumSize">
+            <size>
+             <width>41</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>41</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>dhcp</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="eth_dhcp">
+           <property name="minimumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="minimumSize">
+            <size>
+             <width>41</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>41</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>mac</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="eth_mac">
+           <property name="minimumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_16">
+           <property name="minimumSize">
+            <size>
+             <width>41</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>41</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>dns</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLineEdit" name="eth_dns">
+           <property name="minimumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QPushButton" name="set_btn_eth">
+           <property name="minimumSize">
+            <size>
+             <width>71</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>71</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>set</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="minimumSize">
+         <size>
+          <width>191</width>
+          <height>181</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>191</width>
+          <height>181</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>4G</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_24">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_8">
+           <property name="minimumSize">
+            <size>
+             <width>31</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>31</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>ip</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="cat1_ip">
+           <property name="minimumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_9">
+           <property name="minimumSize">
+            <size>
+             <width>31</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>31</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>imei</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="cat1_imei">
+           <property name="minimumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_10">
+           <property name="minimumSize">
+            <size>
+             <width>31</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>31</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>imsi</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="cat1_imsi">
+           <property name="minimumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="cursorMoveStyle">
+            <enum>Qt::LogicalMoveStyle</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_11">
+           <property name="minimumSize">
+            <size>
+             <width>31</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>31</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>iccid</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="cat1_iccid">
+           <property name="minimumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_13">
+           <property name="minimumSize">
+            <size>
+             <width>31</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>31</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>rssi</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="cat1_rssi">
+           <property name="minimumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_94">
+           <property name="minimumSize">
+            <size>
+             <width>31</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>31</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>APN</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLineEdit" name="cat1_apn">
+           <property name="minimumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QPushButton" name="set_btn_4g">
+           <property name="minimumSize">
+            <size>
+             <width>71</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>71</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>set</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QGroupBox" name="groupBox_4">
+        <property name="minimumSize">
+         <size>
+          <width>191</width>
+          <height>161</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>191</width>
+          <height>161</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>server</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_19">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_12">
+           <property name="minimumSize">
+            <size>
+             <width>31</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>31</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>ip</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="server_ip">
+           <property name="minimumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_17">
+           <property name="minimumSize">
+            <size>
+             <width>31</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>31</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>port</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="server_port">
+           <property name="minimumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_90">
+           <property name="minimumSize">
+            <size>
+             <width>31</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>31</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>name</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="username">
+           <property name="minimumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_91">
+           <property name="minimumSize">
+            <size>
+             <width>31</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>31</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>pass</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="password">
+           <property name="minimumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_18">
+           <property name="minimumSize">
+            <size>
+             <width>31</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>31</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>ntp</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="ntp">
+           <property name="minimumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QPushButton" name="set_btn_server">
+           <property name="minimumSize">
+            <size>
+             <width>75</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>75</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>set</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QGroupBox" name="groupBox_14">
+        <property name="minimumSize">
+         <size>
+          <width>191</width>
+          <height>51</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>191</width>
+          <height>71</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>eletric para</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_18">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_89">
+           <property name="minimumSize">
+            <size>
+             <width>42</width>
+             <height>19</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>42</width>
+             <height>19</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>rel_num</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="rel_num">
+           <property name="minimumSize">
+            <size>
+             <width>43</width>
+             <height>19</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>43</width>
+             <height>19</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_92">
+           <property name="minimumSize">
+            <size>
+             <width>42</width>
+             <height>19</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>42</width>
+             <height>19</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>RT</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="RT">
+           <property name="minimumSize">
+            <size>
+             <width>43</width>
+             <height>19</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>43</width>
+             <height>19</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QPushButton" name="set_btn_rel_num">
+           <property name="minimumSize">
+            <size>
+             <width>74</width>
+             <height>19</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>74</width>
+             <height>19</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>set</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QGroupBox" name="groupBox_15">
+        <property name="minimumSize">
+         <size>
+          <width>191</width>
+          <height>51</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>191</width>
+          <height>71</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>other para</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_27">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_93">
+           <property name="minimumSize">
+            <size>
+             <width>42</width>
+             <height>19</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>52</width>
+             <height>19</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>timeZone</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="timeZone">
+           <property name="minimumSize">
+            <size>
+             <width>43</width>
+             <height>19</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>43</width>
+             <height>19</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QPushButton" name="set_btn_other_para">
+           <property name="minimumSize">
+            <size>
+             <width>54</width>
+             <height>19</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>54</width>
+             <height>19</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>set</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="2" colspan="2">
+     <widget class="QTabWidget" name="environment">
+      <property name="currentIndex">
+       <number>3</number>
+      </property>
+      <widget class="QWidget" name="env">
+       <attribute name="title">
+        <string>env</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_23">
+        <item row="0" column="0">
+         <widget class="QTextBrowser" name="textBrowser_env">
+          <property name="minimumSize">
+           <size>
+            <width>181</width>
+            <height>141</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="angle">
+       <attribute name="title">
+        <string>angle</string>
+       </attribute>
+       <widget class="QTextBrowser" name="textBrowser_angle">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>181</width>
+          <height>141</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="well_lid">
+       <attribute name="title">
+        <string>well lid</string>
+       </attribute>
+       <widget class="QTextBrowser" name="textBrowser_well_lid">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>181</width>
+          <height>141</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="switch_in">
+       <attribute name="title">
+        <string>switch</string>
+       </attribute>
+       <widget class="QTextBrowser" name="textBrowser_switch">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>11</y>
+          <width>191</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>181</width>
+          <height>141</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="2" colspan="2">
+     <widget class="QGroupBox" name="groupBox_11">
+      <property name="title">
+       <string>sensor user</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_22">
+       <item row="0" column="0">
+        <widget class="QCheckBox" name="sb_windspeed">
+         <property name="minimumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>搜博风速01</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QCheckBox" name="yn_temp">
+         <property name="minimumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>耘农温湿度15</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QCheckBox" name="sb_winddir">
+         <property name="minimumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>搜博风向02</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QCheckBox" name="yn_all_UV">
+         <property name="minimumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>耘农辐射16</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QCheckBox" name="sb_temp">
+         <property name="minimumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>搜博温湿度03</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QCheckBox" name="yn_all_1a">
+         <property name="minimumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>耘农多合一1A</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QCheckBox" name="ml_angle">
+         <property name="minimumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>默律倾角0A</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QCheckBox" name="yn_all_ff">
+         <property name="minimumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>耘农多合一FF</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QCheckBox" name="ml_well_lid">
+         <property name="minimumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>默律井盖0C</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QCheckBox" name="yn_xf900_all_ff">
+         <property name="minimumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>耘农XF900 1BF</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QCheckBox" name="jf_door">
+         <property name="minimumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>金弗门锁20</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QCheckBox" name="th_sun">
+         <property name="minimumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>天合光照CC</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QCheckBox" name="th_temp">
+         <property name="minimumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>天合温湿度66</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QCheckBox" name="lk_sun">
+         <property name="minimumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>蓝控光照04</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QCheckBox" name="th_aqi">
+         <property name="minimumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>天合空气8A</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1" rowspan="2">
+        <widget class="QPushButton" name="set_btn_sensor_use">
+         <property name="text">
+          <string>set</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QCheckBox" name="th_wind">
+         <property name="minimumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>91</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>天合风速向C8</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QPushButton" name="btn_plan_refresh">
+      <property name="text">
+       <string>plan refresh</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QPushButton" name="btn_env_refresh">
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>env refresh</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QPushButton" name="btn_ele_refresh">
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>ele refresh</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QPushButton" name="btn_loopsta_refresh">
+      <property name="text">
+       <string>loop refresh</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1" colspan="2">
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="title">
+       <string>electric param</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_20">
+       <item row="2" column="4">
+        <widget class="QLabel" name="label_122">
+         <property name="minimumSize">
+          <size>
+           <width>16</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ec：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5">
+        <widget class="QLabel" name="current_c">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="7">
+        <widget class="QLabel" name="current_Ia_1">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="12">
+        <widget class="QLabel" name="label_132">
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ib4：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="voltage_b">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLabel" name="label_120">
+         <property name="minimumSize">
+          <size>
+           <width>16</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Vc：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="6">
+        <widget class="QLabel" name="label_124">
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ib1：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="13">
+        <widget class="QLabel" name="current_Ib_4">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="21">
+        <widget class="QLabel" name="current_Ib_8">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="20">
+        <widget class="QLabel" name="label_144">
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ib8：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_117">
+         <property name="minimumSize">
+          <size>
+           <width>16</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Vb：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="19">
+        <widget class="QLabel" name="current_Ib_7">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="20">
+        <widget class="QLabel" name="label_146">
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ia8：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="18">
+        <widget class="QLabel" name="label_141">
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ib7：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="voltage_a">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="6">
+        <widget class="QLabel" name="label_125">
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ic1：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="21">
+        <widget class="QLabel" name="current_Ia_8">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="energy_a">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="8">
+        <widget class="QLabel" name="label_126">
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ib2：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="16">
+        <widget class="QLabel" name="label_139">
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ic6：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="8">
+        <widget class="QLabel" name="label_127">
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ic2：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="11">
+        <widget class="QLabel" name="current_Ib_3">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="16">
+        <widget class="QLabel" name="label_140">
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ia6：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="13">
+        <widget class="QLabel" name="current_Ia_4">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="12">
+        <widget class="QLabel" name="label_133">
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ic4：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="15">
+        <widget class="QLabel" name="current_Ib_5">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="10">
+        <widget class="QLabel" name="label_130">
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ic3：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="11">
+        <widget class="QLabel" name="current_Ic_3">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="17">
+        <widget class="QLabel" name="current_Ib_6">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="13">
+        <widget class="QLabel" name="current_Ic_4">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QLabel" name="voltage_c">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="12">
+        <widget class="QLabel" name="label_134">
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ia4：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="21">
+        <widget class="QLabel" name="current_Ic_8">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="8">
+        <widget class="QLabel" name="label_128">
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ia2：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLabel" name="label_119">
+         <property name="minimumSize">
+          <size>
+           <width>16</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Eb：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="14">
+        <widget class="QLabel" name="label_136">
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ic5：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="19">
+        <widget class="QLabel" name="current_Ia_7">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_116">
+         <property name="minimumSize">
+          <size>
+           <width>16</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ia：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="current_b">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLabel" name="energy_b">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_114">
+         <property name="minimumSize">
+          <size>
+           <width>16</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Va：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QLabel" name="label_121">
+         <property name="minimumSize">
+          <size>
+           <width>16</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ic：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="10">
+        <widget class="QLabel" name="label_129">
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ib3：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="10">
+        <widget class="QLabel" name="label_131">
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ia3：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="15">
+        <widget class="QLabel" name="current_Ia_5">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="14">
+        <widget class="QLabel" name="label_135">
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ib5：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="18">
+        <widget class="QLabel" name="label_143">
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ia7：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="7">
+        <widget class="QLabel" name="current_Ib_1">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="9">
+        <widget class="QLabel" name="current_Ia_2">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_115">
+         <property name="minimumSize">
+          <size>
+           <width>16</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ea：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="16">
+        <widget class="QLabel" name="label_138">
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ib6：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="7">
+        <widget class="QLabel" name="current_Ic_1">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="14">
+        <widget class="QLabel" name="label_137">
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ia5：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="9">
+        <widget class="QLabel" name="current_Ic_2">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="15">
+        <widget class="QLabel" name="current_Ic_5">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="19">
+        <widget class="QLabel" name="current_Ic_7">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="6">
+        <widget class="QLabel" name="label_123">
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ia1：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="9">
+        <widget class="QLabel" name="current_Ib_2">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="17">
+        <widget class="QLabel" name="current_Ic_6">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="17">
+        <widget class="QLabel" name="current_Ia_6">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="5">
+        <widget class="QLabel" name="energy_c">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="label_118">
+         <property name="minimumSize">
+          <size>
+           <width>16</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ib：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="current_a">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="20">
+        <widget class="QLabel" name="label_145">
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ic8：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="18">
+        <widget class="QLabel" name="label_142">
+         <property name="minimumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>24</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ic7：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="11">
+        <widget class="QLabel" name="current_Ia_3">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="QGroupBox" name="groupBox_8">
+      <property name="title">
+       <string>loop control</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_21">
+       <item row="0" column="0">
+        <widget class="QRadioButton" name="radioButton_loop_1">
+         <property name="text">
+          <string>loop 1</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QRadioButton" name="radioButton_loop_5">
+         <property name="text">
+          <string>loop 5</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QRadioButton" name="radioButton_loop_2">
+         <property name="text">
+          <string>loop 2</string>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QRadioButton" name="radioButton_loop_6">
+         <property name="text">
+          <string>loop 6</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QRadioButton" name="radioButton_loop_3">
+         <property name="text">
+          <string>loop 3</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QRadioButton" name="radioButton_loop_7">
+         <property name="text">
+          <string>loop 7</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QRadioButton" name="radioButton_loop_4">
+         <property name="text">
+          <string>loop 4</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QRadioButton" name="radioButton_loop_8">
+         <property name="text">
+          <string>loop 8</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1" rowspan="4">
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="title">
+       <string>plan</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_17">
+       <item row="1" column="3">
+        <widget class="QGroupBox" name="groupBox_plan_7">
+         <property name="title">
+          <string>plan 7</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_13">
+          <item row="0" column="0" colspan="2">
+           <widget class="QTabWidget" name="tabWidget_plan_7">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="time_plan_7">
+             <attribute name="title">
+              <string>time_plan</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_14">
+              <item row="0" column="0">
+               <widget class="QCheckBox" name="en_t_plan_7">
+                <property name="text">
+                 <string>EN</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="label_71">
+                <property name="text">
+                 <string>start</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QLabel" name="label_72">
+                <property name="text">
+                 <string>end</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_73">
+                <property name="text">
+                 <string>phase 1:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QTimeEdit" name="s_time_1_t_plan_7"/>
+              </item>
+              <item row="1" column="2">
+               <widget class="QTimeEdit" name="e_time_1_t_plan_7"/>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_74">
+                <property name="text">
+                 <string>phase 2:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QTimeEdit" name="s_time_2_t_plan_7"/>
+              </item>
+              <item row="2" column="2">
+               <widget class="QTimeEdit" name="e_time_2_t_plan_7"/>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_75">
+                <property name="text">
+                 <string>phase 3:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QTimeEdit" name="s_time_3_t_plan_7"/>
+              </item>
+              <item row="3" column="2">
+               <widget class="QTimeEdit" name="e_time_3_t_plan_7"/>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="label_76">
+                <property name="text">
+                 <string>phase 4:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QTimeEdit" name="s_time_4_t_plan_7"/>
+              </item>
+              <item row="4" column="2">
+               <widget class="QTimeEdit" name="e_time_4_t_plan_7"/>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="sun_plan_7">
+             <attribute name="title">
+              <string>sun_plan</string>
+             </attribute>
+             <widget class="QCheckBox" name="en_s_plan_7">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>48</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>EN</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_77">
+              <property name="geometry">
+               <rect>
+                <x>64</x>
+                <y>10</y>
+                <width>54</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>start</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_78">
+              <property name="geometry">
+               <rect>
+                <x>124</x>
+                <y>10</y>
+                <width>54</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>end</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_79">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>30</y>
+                <width>48</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>lux:</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="s_lux_s_plan_7">
+              <property name="geometry">
+               <rect>
+                <x>60</x>
+                <y>30</y>
+                <width>51</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="e_lux_s_plan_7">
+              <property name="geometry">
+               <rect>
+                <x>120</x>
+                <y>30</y>
+                <width>51</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <spacer name="horizontalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>108</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="set_btn_plan_7">
+            <property name="text">
+             <string>set</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QGroupBox" name="groupBox_plan_3">
+         <property name="title">
+          <string>plan 3</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0" colspan="2">
+           <widget class="QTabWidget" name="tabWidget_plan_3">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="time_plan_3">
+             <attribute name="title">
+              <string>time_plan</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_6">
+              <item row="0" column="0">
+               <widget class="QCheckBox" name="en_t_plan_3">
+                <property name="text">
+                 <string>EN</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="label_35">
+                <property name="text">
+                 <string>start</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QLabel" name="label_36">
+                <property name="text">
+                 <string>end</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_37">
+                <property name="text">
+                 <string>phase 1:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QTimeEdit" name="s_time_1_t_plan_3"/>
+              </item>
+              <item row="1" column="2">
+               <widget class="QTimeEdit" name="e_time_1_t_plan_3"/>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_38">
+                <property name="text">
+                 <string>phase 2:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QTimeEdit" name="s_time_2_t_plan_3"/>
+              </item>
+              <item row="2" column="2">
+               <widget class="QTimeEdit" name="e_time_2_t_plan_3"/>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_39">
+                <property name="text">
+                 <string>phase 3:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QTimeEdit" name="s_time_3_t_plan_3"/>
+              </item>
+              <item row="3" column="2">
+               <widget class="QTimeEdit" name="e_time_3_t_plan_3"/>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="label_40">
+                <property name="text">
+                 <string>phase 4:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QTimeEdit" name="s_time_4_t_plan_3"/>
+              </item>
+              <item row="4" column="2">
+               <widget class="QTimeEdit" name="e_time_4_t_plan_3"/>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="sun_plan_3">
+             <attribute name="title">
+              <string>sun_plan</string>
+             </attribute>
+             <widget class="QCheckBox" name="en_s_plan_3">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>48</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>EN</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_41">
+              <property name="geometry">
+               <rect>
+                <x>64</x>
+                <y>10</y>
+                <width>54</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>start</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_42">
+              <property name="geometry">
+               <rect>
+                <x>124</x>
+                <y>10</y>
+                <width>54</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>end</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_43">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>30</y>
+                <width>48</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>lux:</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="s_lux_s_plan_3">
+              <property name="geometry">
+               <rect>
+                <x>60</x>
+                <y>30</y>
+                <width>51</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="e_lux_s_plan_3">
+              <property name="geometry">
+               <rect>
+                <x>120</x>
+                <y>30</y>
+                <width>51</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>108</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="set_btn_plan_3">
+            <property name="text">
+             <string>set</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QGroupBox" name="groupBox_plan_6">
+         <property name="title">
+          <string>plan 6</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_11">
+          <item row="0" column="0" colspan="2">
+           <widget class="QTabWidget" name="tabWidget_plan_6">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="time_plan_6">
+             <attribute name="title">
+              <string>time_plan</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_12">
+              <item row="0" column="0">
+               <widget class="QCheckBox" name="en_t_plan_6">
+                <property name="text">
+                 <string>EN</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="label_62">
+                <property name="text">
+                 <string>start</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QLabel" name="label_63">
+                <property name="text">
+                 <string>end</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_64">
+                <property name="text">
+                 <string>phase 1:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QTimeEdit" name="s_time_1_t_plan_6"/>
+              </item>
+              <item row="1" column="2">
+               <widget class="QTimeEdit" name="e_time_1_t_plan_6"/>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_65">
+                <property name="text">
+                 <string>phase 2:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QTimeEdit" name="s_time_2_t_plan_6"/>
+              </item>
+              <item row="2" column="2">
+               <widget class="QTimeEdit" name="e_time_2_t_plan_6"/>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_66">
+                <property name="text">
+                 <string>phase 3:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QTimeEdit" name="s_time_3_t_plan_6"/>
+              </item>
+              <item row="3" column="2">
+               <widget class="QTimeEdit" name="e_time_3_t_plan_6"/>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="label_67">
+                <property name="text">
+                 <string>phase 4:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QTimeEdit" name="s_time_4_t_plan_6"/>
+              </item>
+              <item row="4" column="2">
+               <widget class="QTimeEdit" name="e_time_4_t_plan_6"/>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="sun_plan_6">
+             <attribute name="title">
+              <string>sun_plan</string>
+             </attribute>
+             <widget class="QCheckBox" name="en_s_plan_6">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>48</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>EN</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_68">
+              <property name="geometry">
+               <rect>
+                <x>64</x>
+                <y>10</y>
+                <width>54</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>start</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_69">
+              <property name="geometry">
+               <rect>
+                <x>124</x>
+                <y>10</y>
+                <width>54</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>end</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_70">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>30</y>
+                <width>48</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>lux:</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="s_lux_s_plan_6">
+              <property name="geometry">
+               <rect>
+                <x>60</x>
+                <y>30</y>
+                <width>51</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="e_lux_s_plan_6">
+              <property name="geometry">
+               <rect>
+                <x>120</x>
+                <y>30</y>
+                <width>51</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <spacer name="horizontalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>108</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="set_btn_plan_6">
+            <property name="text">
+             <string>set</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QGroupBox" name="groupBox_plan_8">
+         <property name="title">
+          <string>plan 8</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_15">
+          <item row="0" column="0" colspan="2">
+           <widget class="QTabWidget" name="tabWidget_plan_8">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="time_plan_8">
+             <attribute name="title">
+              <string>time_plan</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_16">
+              <item row="0" column="0">
+               <widget class="QCheckBox" name="en_t_plan_8">
+                <property name="text">
+                 <string>EN</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="label_80">
+                <property name="text">
+                 <string>start</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QLabel" name="label_81">
+                <property name="text">
+                 <string>end</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_82">
+                <property name="text">
+                 <string>phase 1:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QTimeEdit" name="s_time_1_t_plan_8"/>
+              </item>
+              <item row="1" column="2">
+               <widget class="QTimeEdit" name="e_time_1_t_plan_8"/>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_83">
+                <property name="text">
+                 <string>phase 2:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QTimeEdit" name="s_time_2_t_plan_8"/>
+              </item>
+              <item row="2" column="2">
+               <widget class="QTimeEdit" name="e_time_2_t_plan_8"/>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_84">
+                <property name="text">
+                 <string>phase 3:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QTimeEdit" name="s_time_3_t_plan_8"/>
+              </item>
+              <item row="3" column="2">
+               <widget class="QTimeEdit" name="e_time_3_t_plan_8"/>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="label_85">
+                <property name="text">
+                 <string>phase 4:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QTimeEdit" name="s_time_4_t_plan_8"/>
+              </item>
+              <item row="4" column="2">
+               <widget class="QTimeEdit" name="e_time_4_t_plan_8"/>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="sun_plan_8">
+             <attribute name="title">
+              <string>sun_plan</string>
+             </attribute>
+             <widget class="QCheckBox" name="en_s_plan_8">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>48</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>EN</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_86">
+              <property name="geometry">
+               <rect>
+                <x>64</x>
+                <y>10</y>
+                <width>54</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>start</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_87">
+              <property name="geometry">
+               <rect>
+                <x>124</x>
+                <y>10</y>
+                <width>54</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>end</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_88">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>30</y>
+                <width>48</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>lux:</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="s_lux_s_plan_8">
+              <property name="geometry">
+               <rect>
+                <x>60</x>
+                <y>30</y>
+                <width>51</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="e_lux_s_plan_8">
+              <property name="geometry">
+               <rect>
+                <x>120</x>
+                <y>30</y>
+                <width>51</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <spacer name="horizontalSpacer_8">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>108</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="set_btn_plan_8">
+            <property name="text">
+             <string>set</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QGroupBox" name="groupBox_plan_2">
+         <property name="title">
+          <string>plan 2</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0" colspan="2">
+           <widget class="QTabWidget" name="tabWidget_plan_2">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="time_plan_2">
+             <attribute name="title">
+              <string>time_plan</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="0" column="0">
+               <widget class="QCheckBox" name="en_t_plan_2">
+                <property name="text">
+                 <string>EN</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="label_26">
+                <property name="text">
+                 <string>start</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QLabel" name="label_27">
+                <property name="text">
+                 <string>end</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_28">
+                <property name="text">
+                 <string>phase 1:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QTimeEdit" name="s_time_1_t_plan_2"/>
+              </item>
+              <item row="1" column="2">
+               <widget class="QTimeEdit" name="e_time_1_t_plan_2"/>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_29">
+                <property name="text">
+                 <string>phase 2:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QTimeEdit" name="s_time_2_t_plan_2"/>
+              </item>
+              <item row="2" column="2">
+               <widget class="QTimeEdit" name="e_time_2_t_plan_2"/>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_30">
+                <property name="text">
+                 <string>phase 3:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QTimeEdit" name="s_time_3_t_plan_2"/>
+              </item>
+              <item row="3" column="2">
+               <widget class="QTimeEdit" name="e_time_3_t_plan_2"/>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="label_31">
+                <property name="text">
+                 <string>phase 4:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QTimeEdit" name="s_time_4_t_plan_2"/>
+              </item>
+              <item row="4" column="2">
+               <widget class="QTimeEdit" name="e_time_4_t_plan_2"/>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="sun_plan_2">
+             <attribute name="title">
+              <string>sun_plan</string>
+             </attribute>
+             <widget class="QCheckBox" name="en_s_plan_2">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>48</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>EN</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_32">
+              <property name="geometry">
+               <rect>
+                <x>64</x>
+                <y>10</y>
+                <width>54</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>start</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_33">
+              <property name="geometry">
+               <rect>
+                <x>124</x>
+                <y>10</y>
+                <width>54</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>end</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_34">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>30</y>
+                <width>48</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>lux:</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="s_lux_s_plan_2">
+              <property name="geometry">
+               <rect>
+                <x>60</x>
+                <y>30</y>
+                <width>51</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="e_lux_s_plan_2">
+              <property name="geometry">
+               <rect>
+                <x>120</x>
+                <y>30</y>
+                <width>51</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>108</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="set_btn_plan_2">
+            <property name="text">
+             <string>set</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QGroupBox" name="groupBox_plan_4">
+         <property name="title">
+          <string>plan 4</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_7">
+          <item row="0" column="0" colspan="2">
+           <widget class="QTabWidget" name="tabWidget_plan_4">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="time_plan_4">
+             <attribute name="title">
+              <string>time_plan</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_8">
+              <item row="0" column="0">
+               <widget class="QCheckBox" name="en_t_plan_4">
+                <property name="text">
+                 <string>EN</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="label_44">
+                <property name="text">
+                 <string>start</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QLabel" name="label_45">
+                <property name="text">
+                 <string>end</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_46">
+                <property name="text">
+                 <string>phase 1:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QTimeEdit" name="s_time_1_t_plan_4"/>
+              </item>
+              <item row="1" column="2">
+               <widget class="QTimeEdit" name="e_time_1_t_plan_4"/>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_47">
+                <property name="text">
+                 <string>phase 2:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QTimeEdit" name="s_time_2_t_plan_4"/>
+              </item>
+              <item row="2" column="2">
+               <widget class="QTimeEdit" name="e_time_2_t_plan_4"/>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_48">
+                <property name="text">
+                 <string>phase 3:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QTimeEdit" name="s_time_3_t_plan_4"/>
+              </item>
+              <item row="3" column="2">
+               <widget class="QTimeEdit" name="e_time_3_t_plan_4"/>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="label_49">
+                <property name="text">
+                 <string>phase 4:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QTimeEdit" name="s_time_4_t_plan_4"/>
+              </item>
+              <item row="4" column="2">
+               <widget class="QTimeEdit" name="e_time_4_t_plan_4"/>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="sun_plan_4">
+             <attribute name="title">
+              <string>sun_plan</string>
+             </attribute>
+             <widget class="QCheckBox" name="en_s_plan_4">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>48</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>EN</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_50">
+              <property name="geometry">
+               <rect>
+                <x>64</x>
+                <y>10</y>
+                <width>54</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>start</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_51">
+              <property name="geometry">
+               <rect>
+                <x>124</x>
+                <y>10</y>
+                <width>54</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>end</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_52">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>30</y>
+                <width>48</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>lux:</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="s_lux_s_plan_4">
+              <property name="geometry">
+               <rect>
+                <x>60</x>
+                <y>30</y>
+                <width>51</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="e_lux_s_plan_4">
+              <property name="geometry">
+               <rect>
+                <x>120</x>
+                <y>30</y>
+                <width>51</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>108</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="set_btn_plan_4">
+            <property name="text">
+             <string>set</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QGroupBox" name="groupBox_plan_5">
+         <property name="title">
+          <string>plan 5</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_9">
+          <item row="0" column="0" colspan="2">
+           <widget class="QTabWidget" name="tabWidget_plan_5">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="time_plan_5">
+             <attribute name="title">
+              <string>time_plan</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_10">
+              <item row="2" column="1">
+               <widget class="QTimeEdit" name="s_time_2_t_plan_5"/>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_57">
+                <property name="text">
+                 <string>phase 3:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="label_58">
+                <property name="text">
+                 <string>phase 4:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_56">
+                <property name="text">
+                 <string>phase 2:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QTimeEdit" name="s_time_1_t_plan_5"/>
+              </item>
+              <item row="4" column="2">
+               <widget class="QTimeEdit" name="e_time_4_t_plan_5"/>
+              </item>
+              <item row="1" column="2">
+               <widget class="QTimeEdit" name="e_time_1_t_plan_5"/>
+              </item>
+              <item row="2" column="2">
+               <widget class="QTimeEdit" name="e_time_2_t_plan_5"/>
+              </item>
+              <item row="3" column="2">
+               <widget class="QTimeEdit" name="e_time_3_t_plan_5"/>
+              </item>
+              <item row="0" column="0">
+               <widget class="QCheckBox" name="en_t_plan_5">
+                <property name="text">
+                 <string>EN</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QTimeEdit" name="s_time_4_t_plan_5"/>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="label_53">
+                <property name="text">
+                 <string>start</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QLabel" name="label_54">
+                <property name="text">
+                 <string>end</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QTimeEdit" name="s_time_3_t_plan_5"/>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_55">
+                <property name="text">
+                 <string>phase 1:</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="sun_plan_5">
+             <attribute name="title">
+              <string>sun_plan</string>
+             </attribute>
+             <widget class="QCheckBox" name="en_s_plan_5">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>31</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>EN</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_59">
+              <property name="geometry">
+               <rect>
+                <x>54</x>
+                <y>10</y>
+                <width>54</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>start</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_60">
+              <property name="geometry">
+               <rect>
+                <x>114</x>
+                <y>10</y>
+                <width>54</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>end</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_61">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>30</y>
+                <width>31</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>lux:</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="s_lux_s_plan_5">
+              <property name="geometry">
+               <rect>
+                <x>50</x>
+                <y>30</y>
+                <width>51</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="e_lux_s_plan_5">
+              <property name="geometry">
+               <rect>
+                <x>110</x>
+                <y>30</y>
+                <width>51</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>108</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="set_btn_plan_5">
+            <property name="text">
+             <string>set</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="groupBox_plan_1">
+         <property name="title">
+          <string>plan 1</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0" colspan="2">
+           <widget class="QTabWidget" name="tabWidget_plan_1">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="time_plan_1">
+             <attribute name="title">
+              <string>time_plan</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout">
+              <item row="0" column="0">
+               <widget class="QCheckBox" name="en_t_plan_1">
+                <property name="text">
+                 <string>EN</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="label_7">
+                <property name="text">
+                 <string>start</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QLabel" name="label_19">
+                <property name="text">
+                 <string>end</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label">
+                <property name="text">
+                 <string>phase 1:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QTimeEdit" name="s_time_1_t_plan_1"/>
+              </item>
+              <item row="1" column="2">
+               <widget class="QTimeEdit" name="e_time_1_t_plan_1"/>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_20">
+                <property name="text">
+                 <string>phase 2:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QTimeEdit" name="s_time_2_t_plan_1"/>
+              </item>
+              <item row="2" column="2">
+               <widget class="QTimeEdit" name="e_time_2_t_plan_1"/>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_21">
+                <property name="text">
+                 <string>phase 3:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QTimeEdit" name="s_time_3_t_plan_1"/>
+              </item>
+              <item row="3" column="2">
+               <widget class="QTimeEdit" name="e_time_3_t_plan_1"/>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="label_22">
+                <property name="text">
+                 <string>phase 4:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QTimeEdit" name="s_time_4_t_plan_1"/>
+              </item>
+              <item row="4" column="2">
+               <widget class="QTimeEdit" name="e_time_4_t_plan_1"/>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="sun_plan_1">
+             <attribute name="title">
+              <string>sun_plan</string>
+             </attribute>
+             <widget class="QCheckBox" name="en_s_plan_1">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>48</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>EN</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_23">
+              <property name="geometry">
+               <rect>
+                <x>64</x>
+                <y>10</y>
+                <width>54</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>start</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_24">
+              <property name="geometry">
+               <rect>
+                <x>124</x>
+                <y>10</y>
+                <width>54</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>end</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_25">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>30</y>
+                <width>48</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>lux:</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="s_lux_s_plan_1">
+              <property name="geometry">
+               <rect>
+                <x>60</x>
+                <y>30</y>
+                <width>51</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="e_lux_s_plan_1">
+              <property name="geometry">
+               <rect>
+                <x>120</x>
+                <y>30</y>
+                <width>51</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>108</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="set_btn_plan_1">
+            <property name="text">
+             <string>set</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1354</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>true</bool>
+   </property>
+   <widget class="QMenu" name="menudevice_information">
+    <property name="title">
+     <string>device information</string>
+    </property>
+   </widget>
+   <addaction name="menudevice_information"/>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
