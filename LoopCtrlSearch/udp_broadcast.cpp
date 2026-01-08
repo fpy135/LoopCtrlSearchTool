@@ -62,7 +62,7 @@ QNetworkInterface selectMulticastInterface() {
                     }
 
                     // 其次 Wi-Fi
-                    if (name.contains("Wi-Fi", Qt::CaseInsensitive)) {
+                    if (name.contains("Wi-Fi", Qt::CaseInsensitive) || name.contains("WLAN", Qt::CaseInsensitive)) {
                         selectedInterface = iface;
                     }
 

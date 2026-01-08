@@ -3,6 +3,11 @@
 #include <QDebug>
 #include "protocol.h"
 
+/*****************************************************
+ * 20251202 exe图标显示
+ *
+*****************************************************/
+
 devInfo dev_info[DevNumMax];
 
 MainWindow::MainWindow(QWidget *parent)
@@ -18,7 +23,7 @@ MainWindow::MainWindow(QWidget *parent)
     this->resize(1400,800);
 
     //设置软件图标
-    this->setWindowIcon(QIcon(":/resource/loopctrl_search.png"));
+    this->setWindowIcon(QIcon(":/resource/loopctrl_search.ico"));
 
     // 注册类型
 //    qRegisterMetaType<std::vector<devInfo>>("std::vector<devInfo>");

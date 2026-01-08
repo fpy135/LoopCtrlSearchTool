@@ -30,7 +30,7 @@ device_information::device_information(devInfo devinfo,
     //设置图标和标题
     this->setWindowTitle("device information");
     //设置软件图标
-    this->setWindowIcon(QIcon(":/resource/loopctrl_search.png"));
+    this->setWindowIcon(QIcon(":/resource/loopctrl_search.ico"));
 
     this->currdevinfo = devinfo;
     this->curr_udp_dev = udp_dev;

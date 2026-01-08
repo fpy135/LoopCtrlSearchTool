@@ -35,3 +35,4 @@ DISTFILES +=
 
 RESOURCES += \
     resource.qrc
+RC_ICONS = loopctrl_search.ico
