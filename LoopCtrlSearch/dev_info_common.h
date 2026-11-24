@@ -46,7 +46,7 @@
 #define Para4GRpt_cmd       "para4GRpt"     //4G参数上报命令
 
 typedef struct {
-    uint32_t RT;        //电流互感器电流比
+    uint32_t RT[2];        //电流互感器电流比
 }dev_EnergyPara;
 
 typedef struct {

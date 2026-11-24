@@ -13,7 +13,6 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QCheckBox>
-#include <QtWidgets/QFormLayout>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QLabel>
@@ -27,6 +26,7 @@
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QTimeEdit>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -36,7 +36,7 @@ class Ui_device_information
 public:
     QWidget *centralwidget;
     QGridLayout *gridLayout_28;
-    QFormLayout *formLayout;
+    QVBoxLayout *verticalLayout;
     QGroupBox *groupBox_3;
     QGridLayout *gridLayout_26;
     QLabel *label_14;
@@ -92,123 +92,13 @@ public:
     QLineEdit *rel_num;
     QLabel *label_92;
     QLineEdit *RT;
+    QLineEdit *RT_2;
     QPushButton *set_btn_rel_num;
     QGroupBox *groupBox_15;
     QGridLayout *gridLayout_27;
     QLabel *label_93;
     QLineEdit *timeZone;
     QPushButton *set_btn_other_para;
-    QTabWidget *environment;
-    QWidget *env;
-    QGridLayout *gridLayout_23;
-    QTextBrowser *textBrowser_env;
-    QWidget *angle;
-    QTextBrowser *textBrowser_angle;
-    QWidget *well_lid;
-    QTextBrowser *textBrowser_well_lid;
-    QWidget *switch_in;
-    QTextBrowser *textBrowser_switch;
-    QGroupBox *groupBox_11;
-    QGridLayout *gridLayout_22;
-    QCheckBox *sb_windspeed;
-    QCheckBox *yn_temp;
-    QCheckBox *sb_winddir;
-    QCheckBox *yn_all_UV;
-    QCheckBox *sb_temp;
-    QCheckBox *yn_all_1a;
-    QCheckBox *ml_angle;
-    QCheckBox *yn_all_ff;
-    QCheckBox *ml_well_lid;
-    QCheckBox *yn_xf900_all_ff;
-    QCheckBox *jf_door;
-    QCheckBox *th_sun;
-    QCheckBox *th_temp;
-    QCheckBox *lk_sun;
-    QCheckBox *th_aqi;
-    QPushButton *set_btn_sensor_use;
-    QCheckBox *th_wind;
-    QPushButton *btn_plan_refresh;
-    QPushButton *btn_env_refresh;
-    QPushButton *btn_ele_refresh;
-    QPushButton *btn_loopsta_refresh;
-    QGroupBox *groupBox_6;
-    QGridLayout *gridLayout_20;
-    QLabel *label_122;
-    QLabel *current_c;
-    QLabel *current_Ia_1;
-    QLabel *label_132;
-    QLabel *voltage_b;
-    QLabel *label_120;
-    QLabel *label_124;
-    QLabel *current_Ib_4;
-    QLabel *current_Ib_8;
-    QLabel *label_144;
-    QLabel *label_117;
-    QLabel *current_Ib_7;
-    QLabel *label_146;
-    QLabel *label_141;
-    QLabel *voltage_a;
-    QLabel *label_125;
-    QLabel *current_Ia_8;
-    QLabel *energy_a;
-    QLabel *label_126;
-    QLabel *label_139;
-    QLabel *label_127;
-    QLabel *current_Ib_3;
-    QLabel *label_140;
-    QLabel *current_Ia_4;
-    QLabel *label_133;
-    QLabel *current_Ib_5;
-    QLabel *label_130;
-    QLabel *current_Ic_3;
-    QLabel *current_Ib_6;
-    QLabel *current_Ic_4;
-    QLabel *voltage_c;
-    QLabel *label_134;
-    QLabel *current_Ic_8;
-    QLabel *label_128;
-    QLabel *label_119;
-    QLabel *label_136;
-    QLabel *current_Ia_7;
-    QLabel *label_116;
-    QLabel *current_b;
-    QLabel *energy_b;
-    QLabel *label_114;
-    QLabel *label_121;
-    QLabel *label_129;
-    QLabel *label_131;
-    QLabel *current_Ia_5;
-    QLabel *label_135;
-    QLabel *label_143;
-    QLabel *current_Ib_1;
-    QLabel *current_Ia_2;
-    QLabel *label_115;
-    QLabel *label_138;
-    QLabel *current_Ic_1;
-    QLabel *label_137;
-    QLabel *current_Ic_2;
-    QLabel *current_Ic_5;
-    QLabel *current_Ic_7;
-    QLabel *label_123;
-    QLabel *current_Ib_2;
-    QLabel *current_Ic_6;
-    QLabel *current_Ia_6;
-    QLabel *energy_c;
-    QLabel *label_118;
-    QLabel *current_a;
-    QLabel *label_145;
-    QLabel *label_142;
-    QLabel *current_Ia_3;
-    QGroupBox *groupBox_8;
-    QGridLayout *gridLayout_21;
-    QRadioButton *radioButton_loop_1;
-    QRadioButton *radioButton_loop_5;
-    QRadioButton *radioButton_loop_2;
-    QRadioButton *radioButton_loop_6;
-    QRadioButton *radioButton_loop_3;
-    QRadioButton *radioButton_loop_7;
-    QRadioButton *radioButton_loop_4;
-    QRadioButton *radioButton_loop_8;
     QGroupBox *groupBox_5;
     QGridLayout *gridLayout_17;
     QGroupBox *groupBox_plan_7;
@@ -443,6 +333,117 @@ public:
     QLineEdit *e_lux_s_plan_1;
     QSpacerItem *horizontalSpacer;
     QPushButton *set_btn_plan_1;
+    QTabWidget *environment;
+    QWidget *env;
+    QGridLayout *gridLayout_23;
+    QTextBrowser *textBrowser_env;
+    QWidget *angle;
+    QTextBrowser *textBrowser_angle;
+    QWidget *well_lid;
+    QTextBrowser *textBrowser_well_lid;
+    QWidget *switch_in;
+    QTextBrowser *textBrowser_switch;
+    QGroupBox *groupBox_11;
+    QGridLayout *gridLayout_22;
+    QCheckBox *sb_windspeed;
+    QCheckBox *yn_temp;
+    QCheckBox *sb_winddir;
+    QCheckBox *yn_all_UV;
+    QCheckBox *sb_temp;
+    QCheckBox *yn_all_1a;
+    QCheckBox *ml_angle;
+    QCheckBox *yn_all_ff;
+    QCheckBox *ml_well_lid;
+    QCheckBox *yn_xf900_all_ff;
+    QCheckBox *jf_door;
+    QCheckBox *th_sun;
+    QCheckBox *th_temp;
+    QCheckBox *lk_sun;
+    QCheckBox *th_aqi;
+    QPushButton *set_btn_sensor_use;
+    QCheckBox *th_wind;
+    QPushButton *btn_plan_refresh;
+    QPushButton *btn_env_refresh;
+    QPushButton *btn_ele_refresh;
+    QPushButton *btn_loopsta_refresh;
+    QGroupBox *groupBox_6;
+    QGridLayout *gridLayout_20;
+    QLabel *label_122;
+    QLabel *current_c;
+    QLabel *current_Ia_1;
+    QLabel *label_132;
+    QLabel *voltage_b;
+    QLabel *label_120;
+    QLabel *label_124;
+    QLabel *current_Ib_4;
+    QLabel *current_Ib_8;
+    QLabel *label_144;
+    QLabel *label_117;
+    QLabel *current_Ib_7;
+    QLabel *label_146;
+    QLabel *label_141;
+    QLabel *voltage_a;
+    QLabel *label_125;
+    QLabel *current_Ia_8;
+    QLabel *energy_a;
+    QLabel *label_126;
+    QLabel *label_139;
+    QLabel *label_127;
+    QLabel *current_Ib_3;
+    QLabel *label_140;
+    QLabel *current_Ia_4;
+    QLabel *label_133;
+    QLabel *current_Ib_5;
+    QLabel *label_130;
+    QLabel *current_Ic_3;
+    QLabel *current_Ib_6;
+    QLabel *current_Ic_4;
+    QLabel *voltage_c;
+    QLabel *label_134;
+    QLabel *current_Ic_8;
+    QLabel *label_128;
+    QLabel *label_119;
+    QLabel *label_136;
+    QLabel *current_Ia_7;
+    QLabel *label_116;
+    QLabel *current_b;
+    QLabel *energy_b;
+    QLabel *label_114;
+    QLabel *label_121;
+    QLabel *label_129;
+    QLabel *label_131;
+    QLabel *current_Ia_5;
+    QLabel *label_135;
+    QLabel *label_143;
+    QLabel *current_Ib_1;
+    QLabel *current_Ia_2;
+    QLabel *label_115;
+    QLabel *label_138;
+    QLabel *current_Ic_1;
+    QLabel *label_137;
+    QLabel *current_Ic_2;
+    QLabel *current_Ic_5;
+    QLabel *current_Ic_7;
+    QLabel *label_123;
+    QLabel *current_Ib_2;
+    QLabel *current_Ic_6;
+    QLabel *current_Ia_6;
+    QLabel *energy_c;
+    QLabel *label_118;
+    QLabel *current_a;
+    QLabel *label_145;
+    QLabel *label_142;
+    QLabel *current_Ia_3;
+    QGroupBox *groupBox_8;
+    QGridLayout *gridLayout_21;
+    QRadioButton *radioButton_loop_1;
+    QRadioButton *radioButton_loop_5;
+    QRadioButton *radioButton_loop_2;
+    QRadioButton *radioButton_loop_6;
+    QRadioButton *radioButton_loop_3;
+    QRadioButton *radioButton_loop_7;
+    QRadioButton *radioButton_loop_4;
+    QRadioButton *radioButton_loop_8;
     QMenuBar *menubar;
     QMenu *menudevice_information;
 
@@ -455,8 +456,8 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         gridLayout_28 = new QGridLayout(centralwidget);
         gridLayout_28->setObjectName(QString::fromUtf8("gridLayout_28"));
-        formLayout = new QFormLayout();
-        formLayout->setObjectName(QString::fromUtf8("formLayout"));
+        verticalLayout = new QVBoxLayout();
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         groupBox_3 = new QGroupBox(centralwidget);
         groupBox_3->setObjectName(QString::fromUtf8("groupBox_3"));
         groupBox_3->setMinimumSize(QSize(191, 71));
@@ -498,7 +499,7 @@ public:
         gridLayout_26->addWidget(net_type, 1, 2, 1, 1);
 
 
-        formLayout->setWidget(0, QFormLayout::LabelRole, groupBox_3);
+        verticalLayout->addWidget(groupBox_3);
 
         groupBox = new QGroupBox(centralwidget);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
@@ -609,7 +610,7 @@ public:
         gridLayout_25->addWidget(set_btn_eth, 6, 1, 1, 1);
 
 
-        formLayout->setWidget(1, QFormLayout::LabelRole, groupBox);
+        verticalLayout->addWidget(groupBox);
 
         groupBox_2 = new QGroupBox(centralwidget);
         groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
@@ -722,7 +723,7 @@ public:
         gridLayout_24->addWidget(set_btn_4g, 6, 1, 1, 1);
 
 
-        formLayout->setWidget(2, QFormLayout::LabelRole, groupBox_2);
+        verticalLayout->addWidget(groupBox_2);
 
         groupBox_4 = new QGroupBox(centralwidget);
         groupBox_4->setObjectName(QString::fromUtf8("groupBox_4"));
@@ -813,7 +814,7 @@ public:
         gridLayout_19->addWidget(set_btn_server, 5, 1, 1, 1);
 
 
-        formLayout->setWidget(3, QFormLayout::LabelRole, groupBox_4);
+        verticalLayout->addWidget(groupBox_4);
 
         groupBox_14 = new QGroupBox(centralwidget);
         groupBox_14->setObjectName(QString::fromUtf8("groupBox_14"));
@@ -826,7 +827,7 @@ public:
         label_89->setMinimumSize(QSize(42, 19));
         label_89->setMaximumSize(QSize(42, 19));
 
-        gridLayout_18->addWidget(label_89, 0, 0, 1, 1);
+        gridLayout_18->addWidget(label_89, 0, 0, 1, 2);
 
         rel_num = new QLineEdit(groupBox_14);
         rel_num->setObjectName(QString::fromUtf8("rel_num"));
@@ -834,12 +835,12 @@ public:
         rel_num->setMaximumSize(QSize(43, 19));
         rel_num->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
-        gridLayout_18->addWidget(rel_num, 0, 1, 1, 1);
+        gridLayout_18->addWidget(rel_num, 0, 2, 1, 2);
 
         label_92 = new QLabel(groupBox_14);
         label_92->setObjectName(QString::fromUtf8("label_92"));
-        label_92->setMinimumSize(QSize(42, 19));
-        label_92->setMaximumSize(QSize(42, 19));
+        label_92->setMinimumSize(QSize(25, 19));
+        label_92->setMaximumSize(QSize(25, 19));
 
         gridLayout_18->addWidget(label_92, 1, 0, 1, 1);
 
@@ -849,17 +850,25 @@ public:
         RT->setMaximumSize(QSize(43, 19));
         RT->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
-        gridLayout_18->addWidget(RT, 1, 1, 1, 1);
+        gridLayout_18->addWidget(RT, 1, 1, 1, 2);
+
+        RT_2 = new QLineEdit(groupBox_14);
+        RT_2->setObjectName(QString::fromUtf8("RT_2"));
+        RT_2->setMinimumSize(QSize(43, 19));
+        RT_2->setMaximumSize(QSize(43, 19));
+        RT_2->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout_18->addWidget(RT_2, 1, 3, 1, 1);
 
         set_btn_rel_num = new QPushButton(groupBox_14);
         set_btn_rel_num->setObjectName(QString::fromUtf8("set_btn_rel_num"));
-        set_btn_rel_num->setMinimumSize(QSize(74, 19));
-        set_btn_rel_num->setMaximumSize(QSize(74, 19));
+        set_btn_rel_num->setMinimumSize(QSize(40, 19));
+        set_btn_rel_num->setMaximumSize(QSize(40, 19));
 
-        gridLayout_18->addWidget(set_btn_rel_num, 1, 2, 1, 1);
+        gridLayout_18->addWidget(set_btn_rel_num, 1, 4, 1, 1);
 
 
-        formLayout->setWidget(4, QFormLayout::LabelRole, groupBox_14);
+        verticalLayout->addWidget(groupBox_14);
 
         groupBox_15 = new QGroupBox(centralwidget);
         groupBox_15->setObjectName(QString::fromUtf8("groupBox_15"));
@@ -890,726 +899,10 @@ public:
         gridLayout_27->addWidget(set_btn_other_para, 0, 2, 1, 1);
 
 
-        formLayout->setWidget(5, QFormLayout::LabelRole, groupBox_15);
+        verticalLayout->addWidget(groupBox_15);
 
 
-        gridLayout_28->addLayout(formLayout, 0, 0, 5, 1);
-
-        environment = new QTabWidget(centralwidget);
-        environment->setObjectName(QString::fromUtf8("environment"));
-        env = new QWidget();
-        env->setObjectName(QString::fromUtf8("env"));
-        gridLayout_23 = new QGridLayout(env);
-        gridLayout_23->setObjectName(QString::fromUtf8("gridLayout_23"));
-        textBrowser_env = new QTextBrowser(env);
-        textBrowser_env->setObjectName(QString::fromUtf8("textBrowser_env"));
-        textBrowser_env->setMinimumSize(QSize(181, 141));
-        textBrowser_env->setMaximumSize(QSize(16777215, 16777215));
-
-        gridLayout_23->addWidget(textBrowser_env, 0, 0, 1, 1);
-
-        environment->addTab(env, QString());
-        angle = new QWidget();
-        angle->setObjectName(QString::fromUtf8("angle"));
-        textBrowser_angle = new QTextBrowser(angle);
-        textBrowser_angle->setObjectName(QString::fromUtf8("textBrowser_angle"));
-        textBrowser_angle->setGeometry(QRect(10, 10, 191, 161));
-        textBrowser_angle->setMinimumSize(QSize(181, 141));
-        textBrowser_angle->setMaximumSize(QSize(16777215, 16777215));
-        environment->addTab(angle, QString());
-        well_lid = new QWidget();
-        well_lid->setObjectName(QString::fromUtf8("well_lid"));
-        textBrowser_well_lid = new QTextBrowser(well_lid);
-        textBrowser_well_lid->setObjectName(QString::fromUtf8("textBrowser_well_lid"));
-        textBrowser_well_lid->setGeometry(QRect(10, 10, 191, 161));
-        textBrowser_well_lid->setMinimumSize(QSize(181, 141));
-        textBrowser_well_lid->setMaximumSize(QSize(16777215, 16777215));
-        environment->addTab(well_lid, QString());
-        switch_in = new QWidget();
-        switch_in->setObjectName(QString::fromUtf8("switch_in"));
-        textBrowser_switch = new QTextBrowser(switch_in);
-        textBrowser_switch->setObjectName(QString::fromUtf8("textBrowser_switch"));
-        textBrowser_switch->setGeometry(QRect(10, 11, 191, 161));
-        textBrowser_switch->setMinimumSize(QSize(181, 141));
-        textBrowser_switch->setMaximumSize(QSize(16777215, 16777215));
-        environment->addTab(switch_in, QString());
-
-        gridLayout_28->addWidget(environment, 0, 2, 1, 2);
-
-        groupBox_11 = new QGroupBox(centralwidget);
-        groupBox_11->setObjectName(QString::fromUtf8("groupBox_11"));
-        gridLayout_22 = new QGridLayout(groupBox_11);
-        gridLayout_22->setObjectName(QString::fromUtf8("gridLayout_22"));
-        sb_windspeed = new QCheckBox(groupBox_11);
-        sb_windspeed->setObjectName(QString::fromUtf8("sb_windspeed"));
-        sb_windspeed->setMinimumSize(QSize(91, 16));
-        sb_windspeed->setMaximumSize(QSize(91, 16));
-
-        gridLayout_22->addWidget(sb_windspeed, 0, 0, 1, 1);
-
-        yn_temp = new QCheckBox(groupBox_11);
-        yn_temp->setObjectName(QString::fromUtf8("yn_temp"));
-        yn_temp->setMinimumSize(QSize(91, 16));
-        yn_temp->setMaximumSize(QSize(91, 16));
-
-        gridLayout_22->addWidget(yn_temp, 0, 1, 1, 1);
-
-        sb_winddir = new QCheckBox(groupBox_11);
-        sb_winddir->setObjectName(QString::fromUtf8("sb_winddir"));
-        sb_winddir->setMinimumSize(QSize(91, 16));
-        sb_winddir->setMaximumSize(QSize(91, 16));
-
-        gridLayout_22->addWidget(sb_winddir, 1, 0, 1, 1);
-
-        yn_all_UV = new QCheckBox(groupBox_11);
-        yn_all_UV->setObjectName(QString::fromUtf8("yn_all_UV"));
-        yn_all_UV->setMinimumSize(QSize(91, 16));
-        yn_all_UV->setMaximumSize(QSize(91, 16));
-
-        gridLayout_22->addWidget(yn_all_UV, 1, 1, 1, 1);
-
-        sb_temp = new QCheckBox(groupBox_11);
-        sb_temp->setObjectName(QString::fromUtf8("sb_temp"));
-        sb_temp->setMinimumSize(QSize(91, 16));
-        sb_temp->setMaximumSize(QSize(91, 16));
-
-        gridLayout_22->addWidget(sb_temp, 2, 0, 1, 1);
-
-        yn_all_1a = new QCheckBox(groupBox_11);
-        yn_all_1a->setObjectName(QString::fromUtf8("yn_all_1a"));
-        yn_all_1a->setMinimumSize(QSize(91, 16));
-        yn_all_1a->setMaximumSize(QSize(91, 16));
-
-        gridLayout_22->addWidget(yn_all_1a, 2, 1, 1, 1);
-
-        ml_angle = new QCheckBox(groupBox_11);
-        ml_angle->setObjectName(QString::fromUtf8("ml_angle"));
-        ml_angle->setMinimumSize(QSize(91, 16));
-        ml_angle->setMaximumSize(QSize(91, 16));
-
-        gridLayout_22->addWidget(ml_angle, 3, 0, 1, 1);
-
-        yn_all_ff = new QCheckBox(groupBox_11);
-        yn_all_ff->setObjectName(QString::fromUtf8("yn_all_ff"));
-        yn_all_ff->setMinimumSize(QSize(91, 16));
-        yn_all_ff->setMaximumSize(QSize(91, 16));
-
-        gridLayout_22->addWidget(yn_all_ff, 3, 1, 1, 1);
-
-        ml_well_lid = new QCheckBox(groupBox_11);
-        ml_well_lid->setObjectName(QString::fromUtf8("ml_well_lid"));
-        ml_well_lid->setMinimumSize(QSize(91, 16));
-        ml_well_lid->setMaximumSize(QSize(91, 16));
-
-        gridLayout_22->addWidget(ml_well_lid, 4, 0, 1, 1);
-
-        yn_xf900_all_ff = new QCheckBox(groupBox_11);
-        yn_xf900_all_ff->setObjectName(QString::fromUtf8("yn_xf900_all_ff"));
-        yn_xf900_all_ff->setMinimumSize(QSize(91, 16));
-        yn_xf900_all_ff->setMaximumSize(QSize(91, 16));
-
-        gridLayout_22->addWidget(yn_xf900_all_ff, 4, 1, 1, 1);
-
-        jf_door = new QCheckBox(groupBox_11);
-        jf_door->setObjectName(QString::fromUtf8("jf_door"));
-        jf_door->setMinimumSize(QSize(91, 16));
-        jf_door->setMaximumSize(QSize(91, 16));
-
-        gridLayout_22->addWidget(jf_door, 5, 0, 1, 1);
-
-        th_sun = new QCheckBox(groupBox_11);
-        th_sun->setObjectName(QString::fromUtf8("th_sun"));
-        th_sun->setMinimumSize(QSize(91, 16));
-        th_sun->setMaximumSize(QSize(91, 16));
-
-        gridLayout_22->addWidget(th_sun, 5, 1, 1, 1);
-
-        th_temp = new QCheckBox(groupBox_11);
-        th_temp->setObjectName(QString::fromUtf8("th_temp"));
-        th_temp->setMinimumSize(QSize(91, 16));
-        th_temp->setMaximumSize(QSize(91, 16));
-
-        gridLayout_22->addWidget(th_temp, 6, 0, 1, 1);
-
-        lk_sun = new QCheckBox(groupBox_11);
-        lk_sun->setObjectName(QString::fromUtf8("lk_sun"));
-        lk_sun->setMinimumSize(QSize(91, 16));
-        lk_sun->setMaximumSize(QSize(91, 16));
-
-        gridLayout_22->addWidget(lk_sun, 6, 1, 1, 1);
-
-        th_aqi = new QCheckBox(groupBox_11);
-        th_aqi->setObjectName(QString::fromUtf8("th_aqi"));
-        th_aqi->setMinimumSize(QSize(91, 16));
-        th_aqi->setMaximumSize(QSize(91, 16));
-
-        gridLayout_22->addWidget(th_aqi, 7, 0, 1, 1);
-
-        set_btn_sensor_use = new QPushButton(groupBox_11);
-        set_btn_sensor_use->setObjectName(QString::fromUtf8("set_btn_sensor_use"));
-
-        gridLayout_22->addWidget(set_btn_sensor_use, 7, 1, 2, 1);
-
-        th_wind = new QCheckBox(groupBox_11);
-        th_wind->setObjectName(QString::fromUtf8("th_wind"));
-        th_wind->setMinimumSize(QSize(91, 16));
-        th_wind->setMaximumSize(QSize(91, 16));
-
-        gridLayout_22->addWidget(th_wind, 8, 0, 1, 1);
-
-
-        gridLayout_28->addWidget(groupBox_11, 1, 2, 1, 2);
-
-        btn_plan_refresh = new QPushButton(centralwidget);
-        btn_plan_refresh->setObjectName(QString::fromUtf8("btn_plan_refresh"));
-
-        gridLayout_28->addWidget(btn_plan_refresh, 2, 2, 1, 1);
-
-        btn_env_refresh = new QPushButton(centralwidget);
-        btn_env_refresh->setObjectName(QString::fromUtf8("btn_env_refresh"));
-        btn_env_refresh->setMinimumSize(QSize(80, 0));
-
-        gridLayout_28->addWidget(btn_env_refresh, 2, 3, 1, 1);
-
-        btn_ele_refresh = new QPushButton(centralwidget);
-        btn_ele_refresh->setObjectName(QString::fromUtf8("btn_ele_refresh"));
-        btn_ele_refresh->setMinimumSize(QSize(80, 0));
-
-        gridLayout_28->addWidget(btn_ele_refresh, 3, 2, 1, 1);
-
-        btn_loopsta_refresh = new QPushButton(centralwidget);
-        btn_loopsta_refresh->setObjectName(QString::fromUtf8("btn_loopsta_refresh"));
-
-        gridLayout_28->addWidget(btn_loopsta_refresh, 3, 3, 1, 1);
-
-        groupBox_6 = new QGroupBox(centralwidget);
-        groupBox_6->setObjectName(QString::fromUtf8("groupBox_6"));
-        gridLayout_20 = new QGridLayout(groupBox_6);
-        gridLayout_20->setObjectName(QString::fromUtf8("gridLayout_20"));
-        label_122 = new QLabel(groupBox_6);
-        label_122->setObjectName(QString::fromUtf8("label_122"));
-        label_122->setMinimumSize(QSize(16, 21));
-        label_122->setMaximumSize(QSize(16, 21));
-
-        gridLayout_20->addWidget(label_122, 2, 4, 1, 1);
-
-        current_c = new QLabel(groupBox_6);
-        current_c->setObjectName(QString::fromUtf8("current_c"));
-        current_c->setMinimumSize(QSize(54, 21));
-        current_c->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_c, 1, 5, 1, 1);
-
-        current_Ia_1 = new QLabel(groupBox_6);
-        current_Ia_1->setObjectName(QString::fromUtf8("current_Ia_1"));
-        current_Ia_1->setMinimumSize(QSize(54, 21));
-        current_Ia_1->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_Ia_1, 0, 7, 1, 1);
-
-        label_132 = new QLabel(groupBox_6);
-        label_132->setObjectName(QString::fromUtf8("label_132"));
-        label_132->setMinimumSize(QSize(24, 21));
-        label_132->setMaximumSize(QSize(24, 21));
-
-        gridLayout_20->addWidget(label_132, 1, 12, 1, 1);
-
-        voltage_b = new QLabel(groupBox_6);
-        voltage_b->setObjectName(QString::fromUtf8("voltage_b"));
-        voltage_b->setMinimumSize(QSize(54, 21));
-        voltage_b->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(voltage_b, 0, 3, 1, 1);
-
-        label_120 = new QLabel(groupBox_6);
-        label_120->setObjectName(QString::fromUtf8("label_120"));
-        label_120->setMinimumSize(QSize(16, 21));
-        label_120->setMaximumSize(QSize(16, 21));
-
-        gridLayout_20->addWidget(label_120, 0, 4, 1, 1);
-
-        label_124 = new QLabel(groupBox_6);
-        label_124->setObjectName(QString::fromUtf8("label_124"));
-        label_124->setMinimumSize(QSize(24, 21));
-        label_124->setMaximumSize(QSize(24, 21));
-
-        gridLayout_20->addWidget(label_124, 1, 6, 1, 1);
-
-        current_Ib_4 = new QLabel(groupBox_6);
-        current_Ib_4->setObjectName(QString::fromUtf8("current_Ib_4"));
-        current_Ib_4->setMinimumSize(QSize(54, 21));
-        current_Ib_4->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_Ib_4, 1, 13, 1, 1);
-
-        current_Ib_8 = new QLabel(groupBox_6);
-        current_Ib_8->setObjectName(QString::fromUtf8("current_Ib_8"));
-        current_Ib_8->setMinimumSize(QSize(54, 21));
-        current_Ib_8->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_Ib_8, 1, 21, 1, 1);
-
-        label_144 = new QLabel(groupBox_6);
-        label_144->setObjectName(QString::fromUtf8("label_144"));
-        label_144->setMinimumSize(QSize(24, 21));
-        label_144->setMaximumSize(QSize(24, 21));
-
-        gridLayout_20->addWidget(label_144, 1, 20, 1, 1);
-
-        label_117 = new QLabel(groupBox_6);
-        label_117->setObjectName(QString::fromUtf8("label_117"));
-        label_117->setMinimumSize(QSize(16, 21));
-        label_117->setMaximumSize(QSize(16, 21));
-
-        gridLayout_20->addWidget(label_117, 0, 2, 1, 1);
-
-        current_Ib_7 = new QLabel(groupBox_6);
-        current_Ib_7->setObjectName(QString::fromUtf8("current_Ib_7"));
-        current_Ib_7->setMinimumSize(QSize(54, 21));
-        current_Ib_7->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_Ib_7, 1, 19, 1, 1);
-
-        label_146 = new QLabel(groupBox_6);
-        label_146->setObjectName(QString::fromUtf8("label_146"));
-        label_146->setMinimumSize(QSize(24, 21));
-        label_146->setMaximumSize(QSize(24, 21));
-
-        gridLayout_20->addWidget(label_146, 0, 20, 1, 1);
-
-        label_141 = new QLabel(groupBox_6);
-        label_141->setObjectName(QString::fromUtf8("label_141"));
-        label_141->setMinimumSize(QSize(24, 21));
-        label_141->setMaximumSize(QSize(24, 21));
-
-        gridLayout_20->addWidget(label_141, 1, 18, 1, 1);
-
-        voltage_a = new QLabel(groupBox_6);
-        voltage_a->setObjectName(QString::fromUtf8("voltage_a"));
-        voltage_a->setMinimumSize(QSize(54, 21));
-        voltage_a->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(voltage_a, 0, 1, 1, 1);
-
-        label_125 = new QLabel(groupBox_6);
-        label_125->setObjectName(QString::fromUtf8("label_125"));
-        label_125->setMinimumSize(QSize(24, 21));
-        label_125->setMaximumSize(QSize(24, 21));
-
-        gridLayout_20->addWidget(label_125, 2, 6, 1, 1);
-
-        current_Ia_8 = new QLabel(groupBox_6);
-        current_Ia_8->setObjectName(QString::fromUtf8("current_Ia_8"));
-        current_Ia_8->setMinimumSize(QSize(54, 21));
-        current_Ia_8->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_Ia_8, 0, 21, 1, 1);
-
-        energy_a = new QLabel(groupBox_6);
-        energy_a->setObjectName(QString::fromUtf8("energy_a"));
-        energy_a->setMinimumSize(QSize(54, 21));
-        energy_a->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(energy_a, 2, 1, 1, 1);
-
-        label_126 = new QLabel(groupBox_6);
-        label_126->setObjectName(QString::fromUtf8("label_126"));
-        label_126->setMinimumSize(QSize(24, 21));
-        label_126->setMaximumSize(QSize(24, 21));
-
-        gridLayout_20->addWidget(label_126, 1, 8, 1, 1);
-
-        label_139 = new QLabel(groupBox_6);
-        label_139->setObjectName(QString::fromUtf8("label_139"));
-        label_139->setMinimumSize(QSize(24, 21));
-        label_139->setMaximumSize(QSize(24, 21));
-
-        gridLayout_20->addWidget(label_139, 2, 16, 1, 1);
-
-        label_127 = new QLabel(groupBox_6);
-        label_127->setObjectName(QString::fromUtf8("label_127"));
-        label_127->setMinimumSize(QSize(24, 21));
-        label_127->setMaximumSize(QSize(24, 21));
-
-        gridLayout_20->addWidget(label_127, 2, 8, 1, 1);
-
-        current_Ib_3 = new QLabel(groupBox_6);
-        current_Ib_3->setObjectName(QString::fromUtf8("current_Ib_3"));
-        current_Ib_3->setMinimumSize(QSize(54, 21));
-        current_Ib_3->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_Ib_3, 1, 11, 1, 1);
-
-        label_140 = new QLabel(groupBox_6);
-        label_140->setObjectName(QString::fromUtf8("label_140"));
-        label_140->setMinimumSize(QSize(24, 21));
-        label_140->setMaximumSize(QSize(24, 21));
-
-        gridLayout_20->addWidget(label_140, 0, 16, 1, 1);
-
-        current_Ia_4 = new QLabel(groupBox_6);
-        current_Ia_4->setObjectName(QString::fromUtf8("current_Ia_4"));
-        current_Ia_4->setMinimumSize(QSize(54, 21));
-        current_Ia_4->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_Ia_4, 0, 13, 1, 1);
-
-        label_133 = new QLabel(groupBox_6);
-        label_133->setObjectName(QString::fromUtf8("label_133"));
-        label_133->setMinimumSize(QSize(24, 21));
-        label_133->setMaximumSize(QSize(24, 21));
-
-        gridLayout_20->addWidget(label_133, 2, 12, 1, 1);
-
-        current_Ib_5 = new QLabel(groupBox_6);
-        current_Ib_5->setObjectName(QString::fromUtf8("current_Ib_5"));
-        current_Ib_5->setMinimumSize(QSize(54, 21));
-        current_Ib_5->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_Ib_5, 1, 15, 1, 1);
-
-        label_130 = new QLabel(groupBox_6);
-        label_130->setObjectName(QString::fromUtf8("label_130"));
-        label_130->setMinimumSize(QSize(24, 21));
-        label_130->setMaximumSize(QSize(24, 21));
-
-        gridLayout_20->addWidget(label_130, 2, 10, 1, 1);
-
-        current_Ic_3 = new QLabel(groupBox_6);
-        current_Ic_3->setObjectName(QString::fromUtf8("current_Ic_3"));
-        current_Ic_3->setMinimumSize(QSize(54, 21));
-        current_Ic_3->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_Ic_3, 2, 11, 1, 1);
-
-        current_Ib_6 = new QLabel(groupBox_6);
-        current_Ib_6->setObjectName(QString::fromUtf8("current_Ib_6"));
-        current_Ib_6->setMinimumSize(QSize(54, 21));
-        current_Ib_6->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_Ib_6, 1, 17, 1, 1);
-
-        current_Ic_4 = new QLabel(groupBox_6);
-        current_Ic_4->setObjectName(QString::fromUtf8("current_Ic_4"));
-        current_Ic_4->setMinimumSize(QSize(54, 21));
-        current_Ic_4->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_Ic_4, 2, 13, 1, 1);
-
-        voltage_c = new QLabel(groupBox_6);
-        voltage_c->setObjectName(QString::fromUtf8("voltage_c"));
-        voltage_c->setMinimumSize(QSize(54, 21));
-        voltage_c->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(voltage_c, 0, 5, 1, 1);
-
-        label_134 = new QLabel(groupBox_6);
-        label_134->setObjectName(QString::fromUtf8("label_134"));
-        label_134->setMinimumSize(QSize(24, 21));
-        label_134->setMaximumSize(QSize(24, 21));
-
-        gridLayout_20->addWidget(label_134, 0, 12, 1, 1);
-
-        current_Ic_8 = new QLabel(groupBox_6);
-        current_Ic_8->setObjectName(QString::fromUtf8("current_Ic_8"));
-        current_Ic_8->setMinimumSize(QSize(54, 21));
-        current_Ic_8->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_Ic_8, 2, 21, 1, 1);
-
-        label_128 = new QLabel(groupBox_6);
-        label_128->setObjectName(QString::fromUtf8("label_128"));
-        label_128->setMinimumSize(QSize(24, 21));
-        label_128->setMaximumSize(QSize(24, 21));
-
-        gridLayout_20->addWidget(label_128, 0, 8, 1, 1);
-
-        label_119 = new QLabel(groupBox_6);
-        label_119->setObjectName(QString::fromUtf8("label_119"));
-        label_119->setMinimumSize(QSize(16, 21));
-        label_119->setMaximumSize(QSize(16, 21));
-
-        gridLayout_20->addWidget(label_119, 2, 2, 1, 1);
-
-        label_136 = new QLabel(groupBox_6);
-        label_136->setObjectName(QString::fromUtf8("label_136"));
-        label_136->setMinimumSize(QSize(24, 21));
-        label_136->setMaximumSize(QSize(24, 21));
-
-        gridLayout_20->addWidget(label_136, 2, 14, 1, 1);
-
-        current_Ia_7 = new QLabel(groupBox_6);
-        current_Ia_7->setObjectName(QString::fromUtf8("current_Ia_7"));
-        current_Ia_7->setMinimumSize(QSize(54, 21));
-        current_Ia_7->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_Ia_7, 0, 19, 1, 1);
-
-        label_116 = new QLabel(groupBox_6);
-        label_116->setObjectName(QString::fromUtf8("label_116"));
-        label_116->setMinimumSize(QSize(16, 21));
-        label_116->setMaximumSize(QSize(16, 21));
-
-        gridLayout_20->addWidget(label_116, 1, 0, 1, 1);
-
-        current_b = new QLabel(groupBox_6);
-        current_b->setObjectName(QString::fromUtf8("current_b"));
-        current_b->setMinimumSize(QSize(54, 21));
-        current_b->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_b, 1, 3, 1, 1);
-
-        energy_b = new QLabel(groupBox_6);
-        energy_b->setObjectName(QString::fromUtf8("energy_b"));
-        energy_b->setMinimumSize(QSize(54, 21));
-        energy_b->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(energy_b, 2, 3, 1, 1);
-
-        label_114 = new QLabel(groupBox_6);
-        label_114->setObjectName(QString::fromUtf8("label_114"));
-        label_114->setMinimumSize(QSize(16, 21));
-        label_114->setMaximumSize(QSize(16, 21));
-
-        gridLayout_20->addWidget(label_114, 0, 0, 1, 1);
-
-        label_121 = new QLabel(groupBox_6);
-        label_121->setObjectName(QString::fromUtf8("label_121"));
-        label_121->setMinimumSize(QSize(16, 21));
-        label_121->setMaximumSize(QSize(16, 21));
-
-        gridLayout_20->addWidget(label_121, 1, 4, 1, 1);
-
-        label_129 = new QLabel(groupBox_6);
-        label_129->setObjectName(QString::fromUtf8("label_129"));
-        label_129->setMinimumSize(QSize(24, 21));
-        label_129->setMaximumSize(QSize(24, 21));
-
-        gridLayout_20->addWidget(label_129, 1, 10, 1, 1);
-
-        label_131 = new QLabel(groupBox_6);
-        label_131->setObjectName(QString::fromUtf8("label_131"));
-        label_131->setMinimumSize(QSize(24, 21));
-        label_131->setMaximumSize(QSize(24, 21));
-
-        gridLayout_20->addWidget(label_131, 0, 10, 1, 1);
-
-        current_Ia_5 = new QLabel(groupBox_6);
-        current_Ia_5->setObjectName(QString::fromUtf8("current_Ia_5"));
-        current_Ia_5->setMinimumSize(QSize(54, 21));
-        current_Ia_5->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_Ia_5, 0, 15, 1, 1);
-
-        label_135 = new QLabel(groupBox_6);
-        label_135->setObjectName(QString::fromUtf8("label_135"));
-        label_135->setMinimumSize(QSize(24, 21));
-        label_135->setMaximumSize(QSize(24, 21));
-
-        gridLayout_20->addWidget(label_135, 1, 14, 1, 1);
-
-        label_143 = new QLabel(groupBox_6);
-        label_143->setObjectName(QString::fromUtf8("label_143"));
-        label_143->setMinimumSize(QSize(24, 21));
-        label_143->setMaximumSize(QSize(24, 21));
-
-        gridLayout_20->addWidget(label_143, 0, 18, 1, 1);
-
-        current_Ib_1 = new QLabel(groupBox_6);
-        current_Ib_1->setObjectName(QString::fromUtf8("current_Ib_1"));
-        current_Ib_1->setMinimumSize(QSize(54, 21));
-        current_Ib_1->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_Ib_1, 1, 7, 1, 1);
-
-        current_Ia_2 = new QLabel(groupBox_6);
-        current_Ia_2->setObjectName(QString::fromUtf8("current_Ia_2"));
-        current_Ia_2->setMinimumSize(QSize(54, 21));
-        current_Ia_2->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_Ia_2, 0, 9, 1, 1);
-
-        label_115 = new QLabel(groupBox_6);
-        label_115->setObjectName(QString::fromUtf8("label_115"));
-        label_115->setMinimumSize(QSize(16, 21));
-        label_115->setMaximumSize(QSize(16, 21));
-
-        gridLayout_20->addWidget(label_115, 2, 0, 1, 1);
-
-        label_138 = new QLabel(groupBox_6);
-        label_138->setObjectName(QString::fromUtf8("label_138"));
-        label_138->setMinimumSize(QSize(24, 21));
-        label_138->setMaximumSize(QSize(24, 21));
-
-        gridLayout_20->addWidget(label_138, 1, 16, 1, 1);
-
-        current_Ic_1 = new QLabel(groupBox_6);
-        current_Ic_1->setObjectName(QString::fromUtf8("current_Ic_1"));
-        current_Ic_1->setMinimumSize(QSize(54, 21));
-        current_Ic_1->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_Ic_1, 2, 7, 1, 1);
-
-        label_137 = new QLabel(groupBox_6);
-        label_137->setObjectName(QString::fromUtf8("label_137"));
-        label_137->setMinimumSize(QSize(24, 21));
-        label_137->setMaximumSize(QSize(24, 21));
-
-        gridLayout_20->addWidget(label_137, 0, 14, 1, 1);
-
-        current_Ic_2 = new QLabel(groupBox_6);
-        current_Ic_2->setObjectName(QString::fromUtf8("current_Ic_2"));
-        current_Ic_2->setMinimumSize(QSize(54, 21));
-        current_Ic_2->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_Ic_2, 2, 9, 1, 1);
-
-        current_Ic_5 = new QLabel(groupBox_6);
-        current_Ic_5->setObjectName(QString::fromUtf8("current_Ic_5"));
-        current_Ic_5->setMinimumSize(QSize(54, 21));
-        current_Ic_5->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_Ic_5, 2, 15, 1, 1);
-
-        current_Ic_7 = new QLabel(groupBox_6);
-        current_Ic_7->setObjectName(QString::fromUtf8("current_Ic_7"));
-        current_Ic_7->setMinimumSize(QSize(54, 21));
-        current_Ic_7->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_Ic_7, 2, 19, 1, 1);
-
-        label_123 = new QLabel(groupBox_6);
-        label_123->setObjectName(QString::fromUtf8("label_123"));
-        label_123->setMinimumSize(QSize(24, 21));
-        label_123->setMaximumSize(QSize(24, 21));
-
-        gridLayout_20->addWidget(label_123, 0, 6, 1, 1);
-
-        current_Ib_2 = new QLabel(groupBox_6);
-        current_Ib_2->setObjectName(QString::fromUtf8("current_Ib_2"));
-        current_Ib_2->setMinimumSize(QSize(54, 21));
-        current_Ib_2->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_Ib_2, 1, 9, 1, 1);
-
-        current_Ic_6 = new QLabel(groupBox_6);
-        current_Ic_6->setObjectName(QString::fromUtf8("current_Ic_6"));
-        current_Ic_6->setMinimumSize(QSize(54, 21));
-        current_Ic_6->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_Ic_6, 2, 17, 1, 1);
-
-        current_Ia_6 = new QLabel(groupBox_6);
-        current_Ia_6->setObjectName(QString::fromUtf8("current_Ia_6"));
-        current_Ia_6->setMinimumSize(QSize(54, 21));
-        current_Ia_6->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_Ia_6, 0, 17, 1, 1);
-
-        energy_c = new QLabel(groupBox_6);
-        energy_c->setObjectName(QString::fromUtf8("energy_c"));
-        energy_c->setMinimumSize(QSize(54, 21));
-        energy_c->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(energy_c, 2, 5, 1, 1);
-
-        label_118 = new QLabel(groupBox_6);
-        label_118->setObjectName(QString::fromUtf8("label_118"));
-        label_118->setMinimumSize(QSize(16, 21));
-        label_118->setMaximumSize(QSize(16, 21));
-
-        gridLayout_20->addWidget(label_118, 1, 2, 1, 1);
-
-        current_a = new QLabel(groupBox_6);
-        current_a->setObjectName(QString::fromUtf8("current_a"));
-        current_a->setMinimumSize(QSize(54, 21));
-        current_a->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_a, 1, 1, 1, 1);
-
-        label_145 = new QLabel(groupBox_6);
-        label_145->setObjectName(QString::fromUtf8("label_145"));
-        label_145->setMinimumSize(QSize(24, 21));
-        label_145->setMaximumSize(QSize(24, 21));
-
-        gridLayout_20->addWidget(label_145, 2, 20, 1, 1);
-
-        label_142 = new QLabel(groupBox_6);
-        label_142->setObjectName(QString::fromUtf8("label_142"));
-        label_142->setMinimumSize(QSize(24, 21));
-        label_142->setMaximumSize(QSize(24, 21));
-
-        gridLayout_20->addWidget(label_142, 2, 18, 1, 1);
-
-        current_Ia_3 = new QLabel(groupBox_6);
-        current_Ia_3->setObjectName(QString::fromUtf8("current_Ia_3"));
-        current_Ia_3->setMinimumSize(QSize(54, 21));
-        current_Ia_3->setMaximumSize(QSize(54, 21));
-
-        gridLayout_20->addWidget(current_Ia_3, 0, 11, 1, 1);
-
-
-        gridLayout_28->addWidget(groupBox_6, 4, 1, 1, 2);
-
-        groupBox_8 = new QGroupBox(centralwidget);
-        groupBox_8->setObjectName(QString::fromUtf8("groupBox_8"));
-        gridLayout_21 = new QGridLayout(groupBox_8);
-        gridLayout_21->setObjectName(QString::fromUtf8("gridLayout_21"));
-        radioButton_loop_1 = new QRadioButton(groupBox_8);
-        radioButton_loop_1->setObjectName(QString::fromUtf8("radioButton_loop_1"));
-        radioButton_loop_1->setCheckable(true);
-        radioButton_loop_1->setChecked(false);
-        radioButton_loop_1->setAutoExclusive(false);
-
-        gridLayout_21->addWidget(radioButton_loop_1, 0, 0, 1, 1);
-
-        radioButton_loop_5 = new QRadioButton(groupBox_8);
-        radioButton_loop_5->setObjectName(QString::fromUtf8("radioButton_loop_5"));
-        radioButton_loop_5->setAutoExclusive(false);
-
-        gridLayout_21->addWidget(radioButton_loop_5, 0, 1, 1, 1);
-
-        radioButton_loop_2 = new QRadioButton(groupBox_8);
-        radioButton_loop_2->setObjectName(QString::fromUtf8("radioButton_loop_2"));
-        radioButton_loop_2->setChecked(false);
-        radioButton_loop_2->setAutoExclusive(false);
-
-        gridLayout_21->addWidget(radioButton_loop_2, 1, 0, 1, 1);
-
-        radioButton_loop_6 = new QRadioButton(groupBox_8);
-        radioButton_loop_6->setObjectName(QString::fromUtf8("radioButton_loop_6"));
-        radioButton_loop_6->setAutoExclusive(false);
-
-        gridLayout_21->addWidget(radioButton_loop_6, 1, 1, 1, 1);
-
-        radioButton_loop_3 = new QRadioButton(groupBox_8);
-        radioButton_loop_3->setObjectName(QString::fromUtf8("radioButton_loop_3"));
-        radioButton_loop_3->setAutoExclusive(false);
-
-        gridLayout_21->addWidget(radioButton_loop_3, 2, 0, 1, 1);
-
-        radioButton_loop_7 = new QRadioButton(groupBox_8);
-        radioButton_loop_7->setObjectName(QString::fromUtf8("radioButton_loop_7"));
-        radioButton_loop_7->setAutoExclusive(false);
-
-        gridLayout_21->addWidget(radioButton_loop_7, 2, 1, 1, 1);
-
-        radioButton_loop_4 = new QRadioButton(groupBox_8);
-        radioButton_loop_4->setObjectName(QString::fromUtf8("radioButton_loop_4"));
-        radioButton_loop_4->setAutoExclusive(false);
-
-        gridLayout_21->addWidget(radioButton_loop_4, 3, 0, 1, 1);
-
-        radioButton_loop_8 = new QRadioButton(groupBox_8);
-        radioButton_loop_8->setObjectName(QString::fromUtf8("radioButton_loop_8"));
-        radioButton_loop_8->setCheckable(true);
-        radioButton_loop_8->setChecked(false);
-        radioButton_loop_8->setAutoExclusive(false);
-
-        gridLayout_21->addWidget(radioButton_loop_8, 3, 1, 1, 1);
-
-
-        gridLayout_28->addWidget(groupBox_8, 4, 3, 1, 1);
+        gridLayout_28->addLayout(verticalLayout, 0, 0, 5, 1);
 
         groupBox_5 = new QGroupBox(centralwidget);
         groupBox_5->setObjectName(QString::fromUtf8("groupBox_5"));
@@ -2592,7 +1885,723 @@ public:
         gridLayout_17->addWidget(groupBox_plan_1, 0, 0, 1, 1);
 
 
-        gridLayout_28->addWidget(groupBox_5, 0, 1, 4, 1);
+        gridLayout_28->addWidget(groupBox_5, 0, 1, 2, 1);
+
+        environment = new QTabWidget(centralwidget);
+        environment->setObjectName(QString::fromUtf8("environment"));
+        env = new QWidget();
+        env->setObjectName(QString::fromUtf8("env"));
+        gridLayout_23 = new QGridLayout(env);
+        gridLayout_23->setObjectName(QString::fromUtf8("gridLayout_23"));
+        textBrowser_env = new QTextBrowser(env);
+        textBrowser_env->setObjectName(QString::fromUtf8("textBrowser_env"));
+        textBrowser_env->setMinimumSize(QSize(181, 141));
+        textBrowser_env->setMaximumSize(QSize(16777215, 16777215));
+
+        gridLayout_23->addWidget(textBrowser_env, 0, 0, 1, 1);
+
+        environment->addTab(env, QString());
+        angle = new QWidget();
+        angle->setObjectName(QString::fromUtf8("angle"));
+        textBrowser_angle = new QTextBrowser(angle);
+        textBrowser_angle->setObjectName(QString::fromUtf8("textBrowser_angle"));
+        textBrowser_angle->setGeometry(QRect(10, 10, 191, 161));
+        textBrowser_angle->setMinimumSize(QSize(181, 141));
+        textBrowser_angle->setMaximumSize(QSize(16777215, 16777215));
+        environment->addTab(angle, QString());
+        well_lid = new QWidget();
+        well_lid->setObjectName(QString::fromUtf8("well_lid"));
+        textBrowser_well_lid = new QTextBrowser(well_lid);
+        textBrowser_well_lid->setObjectName(QString::fromUtf8("textBrowser_well_lid"));
+        textBrowser_well_lid->setGeometry(QRect(10, 10, 191, 161));
+        textBrowser_well_lid->setMinimumSize(QSize(181, 141));
+        textBrowser_well_lid->setMaximumSize(QSize(16777215, 16777215));
+        environment->addTab(well_lid, QString());
+        switch_in = new QWidget();
+        switch_in->setObjectName(QString::fromUtf8("switch_in"));
+        textBrowser_switch = new QTextBrowser(switch_in);
+        textBrowser_switch->setObjectName(QString::fromUtf8("textBrowser_switch"));
+        textBrowser_switch->setGeometry(QRect(10, 11, 191, 161));
+        textBrowser_switch->setMinimumSize(QSize(181, 141));
+        textBrowser_switch->setMaximumSize(QSize(16777215, 16777215));
+        environment->addTab(switch_in, QString());
+
+        gridLayout_28->addWidget(environment, 0, 2, 1, 2);
+
+        groupBox_11 = new QGroupBox(centralwidget);
+        groupBox_11->setObjectName(QString::fromUtf8("groupBox_11"));
+        gridLayout_22 = new QGridLayout(groupBox_11);
+        gridLayout_22->setObjectName(QString::fromUtf8("gridLayout_22"));
+        sb_windspeed = new QCheckBox(groupBox_11);
+        sb_windspeed->setObjectName(QString::fromUtf8("sb_windspeed"));
+        sb_windspeed->setMinimumSize(QSize(91, 16));
+        sb_windspeed->setMaximumSize(QSize(91, 16));
+
+        gridLayout_22->addWidget(sb_windspeed, 0, 0, 1, 1);
+
+        yn_temp = new QCheckBox(groupBox_11);
+        yn_temp->setObjectName(QString::fromUtf8("yn_temp"));
+        yn_temp->setMinimumSize(QSize(91, 16));
+        yn_temp->setMaximumSize(QSize(91, 16));
+
+        gridLayout_22->addWidget(yn_temp, 0, 1, 1, 1);
+
+        sb_winddir = new QCheckBox(groupBox_11);
+        sb_winddir->setObjectName(QString::fromUtf8("sb_winddir"));
+        sb_winddir->setMinimumSize(QSize(91, 16));
+        sb_winddir->setMaximumSize(QSize(91, 16));
+
+        gridLayout_22->addWidget(sb_winddir, 1, 0, 1, 1);
+
+        yn_all_UV = new QCheckBox(groupBox_11);
+        yn_all_UV->setObjectName(QString::fromUtf8("yn_all_UV"));
+        yn_all_UV->setMinimumSize(QSize(91, 16));
+        yn_all_UV->setMaximumSize(QSize(91, 16));
+
+        gridLayout_22->addWidget(yn_all_UV, 1, 1, 1, 1);
+
+        sb_temp = new QCheckBox(groupBox_11);
+        sb_temp->setObjectName(QString::fromUtf8("sb_temp"));
+        sb_temp->setMinimumSize(QSize(91, 16));
+        sb_temp->setMaximumSize(QSize(91, 16));
+
+        gridLayout_22->addWidget(sb_temp, 2, 0, 1, 1);
+
+        yn_all_1a = new QCheckBox(groupBox_11);
+        yn_all_1a->setObjectName(QString::fromUtf8("yn_all_1a"));
+        yn_all_1a->setMinimumSize(QSize(91, 16));
+        yn_all_1a->setMaximumSize(QSize(91, 16));
+
+        gridLayout_22->addWidget(yn_all_1a, 2, 1, 1, 1);
+
+        ml_angle = new QCheckBox(groupBox_11);
+        ml_angle->setObjectName(QString::fromUtf8("ml_angle"));
+        ml_angle->setMinimumSize(QSize(91, 16));
+        ml_angle->setMaximumSize(QSize(91, 16));
+
+        gridLayout_22->addWidget(ml_angle, 3, 0, 1, 1);
+
+        yn_all_ff = new QCheckBox(groupBox_11);
+        yn_all_ff->setObjectName(QString::fromUtf8("yn_all_ff"));
+        yn_all_ff->setMinimumSize(QSize(91, 16));
+        yn_all_ff->setMaximumSize(QSize(91, 16));
+
+        gridLayout_22->addWidget(yn_all_ff, 3, 1, 1, 1);
+
+        ml_well_lid = new QCheckBox(groupBox_11);
+        ml_well_lid->setObjectName(QString::fromUtf8("ml_well_lid"));
+        ml_well_lid->setMinimumSize(QSize(91, 16));
+        ml_well_lid->setMaximumSize(QSize(91, 16));
+
+        gridLayout_22->addWidget(ml_well_lid, 4, 0, 1, 1);
+
+        yn_xf900_all_ff = new QCheckBox(groupBox_11);
+        yn_xf900_all_ff->setObjectName(QString::fromUtf8("yn_xf900_all_ff"));
+        yn_xf900_all_ff->setMinimumSize(QSize(91, 16));
+        yn_xf900_all_ff->setMaximumSize(QSize(91, 16));
+
+        gridLayout_22->addWidget(yn_xf900_all_ff, 4, 1, 1, 1);
+
+        jf_door = new QCheckBox(groupBox_11);
+        jf_door->setObjectName(QString::fromUtf8("jf_door"));
+        jf_door->setMinimumSize(QSize(91, 16));
+        jf_door->setMaximumSize(QSize(91, 16));
+
+        gridLayout_22->addWidget(jf_door, 5, 0, 1, 1);
+
+        th_sun = new QCheckBox(groupBox_11);
+        th_sun->setObjectName(QString::fromUtf8("th_sun"));
+        th_sun->setMinimumSize(QSize(91, 16));
+        th_sun->setMaximumSize(QSize(91, 16));
+
+        gridLayout_22->addWidget(th_sun, 5, 1, 1, 1);
+
+        th_temp = new QCheckBox(groupBox_11);
+        th_temp->setObjectName(QString::fromUtf8("th_temp"));
+        th_temp->setMinimumSize(QSize(91, 16));
+        th_temp->setMaximumSize(QSize(91, 16));
+
+        gridLayout_22->addWidget(th_temp, 6, 0, 1, 1);
+
+        lk_sun = new QCheckBox(groupBox_11);
+        lk_sun->setObjectName(QString::fromUtf8("lk_sun"));
+        lk_sun->setMinimumSize(QSize(91, 16));
+        lk_sun->setMaximumSize(QSize(91, 16));
+
+        gridLayout_22->addWidget(lk_sun, 6, 1, 1, 1);
+
+        th_aqi = new QCheckBox(groupBox_11);
+        th_aqi->setObjectName(QString::fromUtf8("th_aqi"));
+        th_aqi->setMinimumSize(QSize(91, 16));
+        th_aqi->setMaximumSize(QSize(91, 16));
+
+        gridLayout_22->addWidget(th_aqi, 7, 0, 1, 1);
+
+        set_btn_sensor_use = new QPushButton(groupBox_11);
+        set_btn_sensor_use->setObjectName(QString::fromUtf8("set_btn_sensor_use"));
+
+        gridLayout_22->addWidget(set_btn_sensor_use, 7, 1, 2, 1);
+
+        th_wind = new QCheckBox(groupBox_11);
+        th_wind->setObjectName(QString::fromUtf8("th_wind"));
+        th_wind->setMinimumSize(QSize(91, 16));
+        th_wind->setMaximumSize(QSize(91, 16));
+
+        gridLayout_22->addWidget(th_wind, 8, 0, 1, 1);
+
+
+        gridLayout_28->addWidget(groupBox_11, 1, 2, 1, 2);
+
+        btn_plan_refresh = new QPushButton(centralwidget);
+        btn_plan_refresh->setObjectName(QString::fromUtf8("btn_plan_refresh"));
+
+        gridLayout_28->addWidget(btn_plan_refresh, 2, 2, 1, 1);
+
+        btn_env_refresh = new QPushButton(centralwidget);
+        btn_env_refresh->setObjectName(QString::fromUtf8("btn_env_refresh"));
+        btn_env_refresh->setMinimumSize(QSize(80, 0));
+
+        gridLayout_28->addWidget(btn_env_refresh, 2, 3, 1, 1);
+
+        btn_ele_refresh = new QPushButton(centralwidget);
+        btn_ele_refresh->setObjectName(QString::fromUtf8("btn_ele_refresh"));
+        btn_ele_refresh->setMinimumSize(QSize(80, 0));
+
+        gridLayout_28->addWidget(btn_ele_refresh, 3, 2, 1, 1);
+
+        btn_loopsta_refresh = new QPushButton(centralwidget);
+        btn_loopsta_refresh->setObjectName(QString::fromUtf8("btn_loopsta_refresh"));
+
+        gridLayout_28->addWidget(btn_loopsta_refresh, 3, 3, 1, 1);
+
+        groupBox_6 = new QGroupBox(centralwidget);
+        groupBox_6->setObjectName(QString::fromUtf8("groupBox_6"));
+        gridLayout_20 = new QGridLayout(groupBox_6);
+        gridLayout_20->setObjectName(QString::fromUtf8("gridLayout_20"));
+        label_122 = new QLabel(groupBox_6);
+        label_122->setObjectName(QString::fromUtf8("label_122"));
+        label_122->setMinimumSize(QSize(16, 21));
+        label_122->setMaximumSize(QSize(16, 21));
+
+        gridLayout_20->addWidget(label_122, 2, 4, 1, 1);
+
+        current_c = new QLabel(groupBox_6);
+        current_c->setObjectName(QString::fromUtf8("current_c"));
+        current_c->setMinimumSize(QSize(54, 21));
+        current_c->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_c, 1, 5, 1, 1);
+
+        current_Ia_1 = new QLabel(groupBox_6);
+        current_Ia_1->setObjectName(QString::fromUtf8("current_Ia_1"));
+        current_Ia_1->setMinimumSize(QSize(54, 21));
+        current_Ia_1->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_Ia_1, 0, 7, 1, 1);
+
+        label_132 = new QLabel(groupBox_6);
+        label_132->setObjectName(QString::fromUtf8("label_132"));
+        label_132->setMinimumSize(QSize(24, 21));
+        label_132->setMaximumSize(QSize(24, 21));
+
+        gridLayout_20->addWidget(label_132, 1, 12, 1, 1);
+
+        voltage_b = new QLabel(groupBox_6);
+        voltage_b->setObjectName(QString::fromUtf8("voltage_b"));
+        voltage_b->setMinimumSize(QSize(54, 21));
+        voltage_b->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(voltage_b, 0, 3, 1, 1);
+
+        label_120 = new QLabel(groupBox_6);
+        label_120->setObjectName(QString::fromUtf8("label_120"));
+        label_120->setMinimumSize(QSize(16, 21));
+        label_120->setMaximumSize(QSize(16, 21));
+
+        gridLayout_20->addWidget(label_120, 0, 4, 1, 1);
+
+        label_124 = new QLabel(groupBox_6);
+        label_124->setObjectName(QString::fromUtf8("label_124"));
+        label_124->setMinimumSize(QSize(24, 21));
+        label_124->setMaximumSize(QSize(24, 21));
+
+        gridLayout_20->addWidget(label_124, 1, 6, 1, 1);
+
+        current_Ib_4 = new QLabel(groupBox_6);
+        current_Ib_4->setObjectName(QString::fromUtf8("current_Ib_4"));
+        current_Ib_4->setMinimumSize(QSize(54, 21));
+        current_Ib_4->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_Ib_4, 1, 13, 1, 1);
+
+        current_Ib_8 = new QLabel(groupBox_6);
+        current_Ib_8->setObjectName(QString::fromUtf8("current_Ib_8"));
+        current_Ib_8->setMinimumSize(QSize(54, 21));
+        current_Ib_8->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_Ib_8, 1, 21, 1, 1);
+
+        label_144 = new QLabel(groupBox_6);
+        label_144->setObjectName(QString::fromUtf8("label_144"));
+        label_144->setMinimumSize(QSize(24, 21));
+        label_144->setMaximumSize(QSize(24, 21));
+
+        gridLayout_20->addWidget(label_144, 1, 20, 1, 1);
+
+        label_117 = new QLabel(groupBox_6);
+        label_117->setObjectName(QString::fromUtf8("label_117"));
+        label_117->setMinimumSize(QSize(16, 21));
+        label_117->setMaximumSize(QSize(16, 21));
+
+        gridLayout_20->addWidget(label_117, 0, 2, 1, 1);
+
+        current_Ib_7 = new QLabel(groupBox_6);
+        current_Ib_7->setObjectName(QString::fromUtf8("current_Ib_7"));
+        current_Ib_7->setMinimumSize(QSize(54, 21));
+        current_Ib_7->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_Ib_7, 1, 19, 1, 1);
+
+        label_146 = new QLabel(groupBox_6);
+        label_146->setObjectName(QString::fromUtf8("label_146"));
+        label_146->setMinimumSize(QSize(24, 21));
+        label_146->setMaximumSize(QSize(24, 21));
+
+        gridLayout_20->addWidget(label_146, 0, 20, 1, 1);
+
+        label_141 = new QLabel(groupBox_6);
+        label_141->setObjectName(QString::fromUtf8("label_141"));
+        label_141->setMinimumSize(QSize(24, 21));
+        label_141->setMaximumSize(QSize(24, 21));
+
+        gridLayout_20->addWidget(label_141, 1, 18, 1, 1);
+
+        voltage_a = new QLabel(groupBox_6);
+        voltage_a->setObjectName(QString::fromUtf8("voltage_a"));
+        voltage_a->setMinimumSize(QSize(54, 21));
+        voltage_a->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(voltage_a, 0, 1, 1, 1);
+
+        label_125 = new QLabel(groupBox_6);
+        label_125->setObjectName(QString::fromUtf8("label_125"));
+        label_125->setMinimumSize(QSize(24, 21));
+        label_125->setMaximumSize(QSize(24, 21));
+
+        gridLayout_20->addWidget(label_125, 2, 6, 1, 1);
+
+        current_Ia_8 = new QLabel(groupBox_6);
+        current_Ia_8->setObjectName(QString::fromUtf8("current_Ia_8"));
+        current_Ia_8->setMinimumSize(QSize(54, 21));
+        current_Ia_8->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_Ia_8, 0, 21, 1, 1);
+
+        energy_a = new QLabel(groupBox_6);
+        energy_a->setObjectName(QString::fromUtf8("energy_a"));
+        energy_a->setMinimumSize(QSize(54, 21));
+        energy_a->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(energy_a, 2, 1, 1, 1);
+
+        label_126 = new QLabel(groupBox_6);
+        label_126->setObjectName(QString::fromUtf8("label_126"));
+        label_126->setMinimumSize(QSize(24, 21));
+        label_126->setMaximumSize(QSize(24, 21));
+
+        gridLayout_20->addWidget(label_126, 1, 8, 1, 1);
+
+        label_139 = new QLabel(groupBox_6);
+        label_139->setObjectName(QString::fromUtf8("label_139"));
+        label_139->setMinimumSize(QSize(24, 21));
+        label_139->setMaximumSize(QSize(24, 21));
+
+        gridLayout_20->addWidget(label_139, 2, 16, 1, 1);
+
+        label_127 = new QLabel(groupBox_6);
+        label_127->setObjectName(QString::fromUtf8("label_127"));
+        label_127->setMinimumSize(QSize(24, 21));
+        label_127->setMaximumSize(QSize(24, 21));
+
+        gridLayout_20->addWidget(label_127, 2, 8, 1, 1);
+
+        current_Ib_3 = new QLabel(groupBox_6);
+        current_Ib_3->setObjectName(QString::fromUtf8("current_Ib_3"));
+        current_Ib_3->setMinimumSize(QSize(54, 21));
+        current_Ib_3->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_Ib_3, 1, 11, 1, 1);
+
+        label_140 = new QLabel(groupBox_6);
+        label_140->setObjectName(QString::fromUtf8("label_140"));
+        label_140->setMinimumSize(QSize(24, 21));
+        label_140->setMaximumSize(QSize(24, 21));
+
+        gridLayout_20->addWidget(label_140, 0, 16, 1, 1);
+
+        current_Ia_4 = new QLabel(groupBox_6);
+        current_Ia_4->setObjectName(QString::fromUtf8("current_Ia_4"));
+        current_Ia_4->setMinimumSize(QSize(54, 21));
+        current_Ia_4->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_Ia_4, 0, 13, 1, 1);
+
+        label_133 = new QLabel(groupBox_6);
+        label_133->setObjectName(QString::fromUtf8("label_133"));
+        label_133->setMinimumSize(QSize(24, 21));
+        label_133->setMaximumSize(QSize(24, 21));
+
+        gridLayout_20->addWidget(label_133, 2, 12, 1, 1);
+
+        current_Ib_5 = new QLabel(groupBox_6);
+        current_Ib_5->setObjectName(QString::fromUtf8("current_Ib_5"));
+        current_Ib_5->setMinimumSize(QSize(54, 21));
+        current_Ib_5->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_Ib_5, 1, 15, 1, 1);
+
+        label_130 = new QLabel(groupBox_6);
+        label_130->setObjectName(QString::fromUtf8("label_130"));
+        label_130->setMinimumSize(QSize(24, 21));
+        label_130->setMaximumSize(QSize(24, 21));
+
+        gridLayout_20->addWidget(label_130, 2, 10, 1, 1);
+
+        current_Ic_3 = new QLabel(groupBox_6);
+        current_Ic_3->setObjectName(QString::fromUtf8("current_Ic_3"));
+        current_Ic_3->setMinimumSize(QSize(54, 21));
+        current_Ic_3->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_Ic_3, 2, 11, 1, 1);
+
+        current_Ib_6 = new QLabel(groupBox_6);
+        current_Ib_6->setObjectName(QString::fromUtf8("current_Ib_6"));
+        current_Ib_6->setMinimumSize(QSize(54, 21));
+        current_Ib_6->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_Ib_6, 1, 17, 1, 1);
+
+        current_Ic_4 = new QLabel(groupBox_6);
+        current_Ic_4->setObjectName(QString::fromUtf8("current_Ic_4"));
+        current_Ic_4->setMinimumSize(QSize(54, 21));
+        current_Ic_4->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_Ic_4, 2, 13, 1, 1);
+
+        voltage_c = new QLabel(groupBox_6);
+        voltage_c->setObjectName(QString::fromUtf8("voltage_c"));
+        voltage_c->setMinimumSize(QSize(54, 21));
+        voltage_c->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(voltage_c, 0, 5, 1, 1);
+
+        label_134 = new QLabel(groupBox_6);
+        label_134->setObjectName(QString::fromUtf8("label_134"));
+        label_134->setMinimumSize(QSize(24, 21));
+        label_134->setMaximumSize(QSize(24, 21));
+
+        gridLayout_20->addWidget(label_134, 0, 12, 1, 1);
+
+        current_Ic_8 = new QLabel(groupBox_6);
+        current_Ic_8->setObjectName(QString::fromUtf8("current_Ic_8"));
+        current_Ic_8->setMinimumSize(QSize(54, 21));
+        current_Ic_8->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_Ic_8, 2, 21, 1, 1);
+
+        label_128 = new QLabel(groupBox_6);
+        label_128->setObjectName(QString::fromUtf8("label_128"));
+        label_128->setMinimumSize(QSize(24, 21));
+        label_128->setMaximumSize(QSize(24, 21));
+
+        gridLayout_20->addWidget(label_128, 0, 8, 1, 1);
+
+        label_119 = new QLabel(groupBox_6);
+        label_119->setObjectName(QString::fromUtf8("label_119"));
+        label_119->setMinimumSize(QSize(16, 21));
+        label_119->setMaximumSize(QSize(16, 21));
+
+        gridLayout_20->addWidget(label_119, 2, 2, 1, 1);
+
+        label_136 = new QLabel(groupBox_6);
+        label_136->setObjectName(QString::fromUtf8("label_136"));
+        label_136->setMinimumSize(QSize(24, 21));
+        label_136->setMaximumSize(QSize(24, 21));
+
+        gridLayout_20->addWidget(label_136, 2, 14, 1, 1);
+
+        current_Ia_7 = new QLabel(groupBox_6);
+        current_Ia_7->setObjectName(QString::fromUtf8("current_Ia_7"));
+        current_Ia_7->setMinimumSize(QSize(54, 21));
+        current_Ia_7->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_Ia_7, 0, 19, 1, 1);
+
+        label_116 = new QLabel(groupBox_6);
+        label_116->setObjectName(QString::fromUtf8("label_116"));
+        label_116->setMinimumSize(QSize(16, 21));
+        label_116->setMaximumSize(QSize(16, 21));
+
+        gridLayout_20->addWidget(label_116, 1, 0, 1, 1);
+
+        current_b = new QLabel(groupBox_6);
+        current_b->setObjectName(QString::fromUtf8("current_b"));
+        current_b->setMinimumSize(QSize(54, 21));
+        current_b->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_b, 1, 3, 1, 1);
+
+        energy_b = new QLabel(groupBox_6);
+        energy_b->setObjectName(QString::fromUtf8("energy_b"));
+        energy_b->setMinimumSize(QSize(54, 21));
+        energy_b->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(energy_b, 2, 3, 1, 1);
+
+        label_114 = new QLabel(groupBox_6);
+        label_114->setObjectName(QString::fromUtf8("label_114"));
+        label_114->setMinimumSize(QSize(16, 21));
+        label_114->setMaximumSize(QSize(16, 21));
+
+        gridLayout_20->addWidget(label_114, 0, 0, 1, 1);
+
+        label_121 = new QLabel(groupBox_6);
+        label_121->setObjectName(QString::fromUtf8("label_121"));
+        label_121->setMinimumSize(QSize(16, 21));
+        label_121->setMaximumSize(QSize(16, 21));
+
+        gridLayout_20->addWidget(label_121, 1, 4, 1, 1);
+
+        label_129 = new QLabel(groupBox_6);
+        label_129->setObjectName(QString::fromUtf8("label_129"));
+        label_129->setMinimumSize(QSize(24, 21));
+        label_129->setMaximumSize(QSize(24, 21));
+
+        gridLayout_20->addWidget(label_129, 1, 10, 1, 1);
+
+        label_131 = new QLabel(groupBox_6);
+        label_131->setObjectName(QString::fromUtf8("label_131"));
+        label_131->setMinimumSize(QSize(24, 21));
+        label_131->setMaximumSize(QSize(24, 21));
+
+        gridLayout_20->addWidget(label_131, 0, 10, 1, 1);
+
+        current_Ia_5 = new QLabel(groupBox_6);
+        current_Ia_5->setObjectName(QString::fromUtf8("current_Ia_5"));
+        current_Ia_5->setMinimumSize(QSize(54, 21));
+        current_Ia_5->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_Ia_5, 0, 15, 1, 1);
+
+        label_135 = new QLabel(groupBox_6);
+        label_135->setObjectName(QString::fromUtf8("label_135"));
+        label_135->setMinimumSize(QSize(24, 21));
+        label_135->setMaximumSize(QSize(24, 21));
+
+        gridLayout_20->addWidget(label_135, 1, 14, 1, 1);
+
+        label_143 = new QLabel(groupBox_6);
+        label_143->setObjectName(QString::fromUtf8("label_143"));
+        label_143->setMinimumSize(QSize(24, 21));
+        label_143->setMaximumSize(QSize(24, 21));
+
+        gridLayout_20->addWidget(label_143, 0, 18, 1, 1);
+
+        current_Ib_1 = new QLabel(groupBox_6);
+        current_Ib_1->setObjectName(QString::fromUtf8("current_Ib_1"));
+        current_Ib_1->setMinimumSize(QSize(54, 21));
+        current_Ib_1->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_Ib_1, 1, 7, 1, 1);
+
+        current_Ia_2 = new QLabel(groupBox_6);
+        current_Ia_2->setObjectName(QString::fromUtf8("current_Ia_2"));
+        current_Ia_2->setMinimumSize(QSize(54, 21));
+        current_Ia_2->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_Ia_2, 0, 9, 1, 1);
+
+        label_115 = new QLabel(groupBox_6);
+        label_115->setObjectName(QString::fromUtf8("label_115"));
+        label_115->setMinimumSize(QSize(16, 21));
+        label_115->setMaximumSize(QSize(16, 21));
+
+        gridLayout_20->addWidget(label_115, 2, 0, 1, 1);
+
+        label_138 = new QLabel(groupBox_6);
+        label_138->setObjectName(QString::fromUtf8("label_138"));
+        label_138->setMinimumSize(QSize(24, 21));
+        label_138->setMaximumSize(QSize(24, 21));
+
+        gridLayout_20->addWidget(label_138, 1, 16, 1, 1);
+
+        current_Ic_1 = new QLabel(groupBox_6);
+        current_Ic_1->setObjectName(QString::fromUtf8("current_Ic_1"));
+        current_Ic_1->setMinimumSize(QSize(54, 21));
+        current_Ic_1->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_Ic_1, 2, 7, 1, 1);
+
+        label_137 = new QLabel(groupBox_6);
+        label_137->setObjectName(QString::fromUtf8("label_137"));
+        label_137->setMinimumSize(QSize(24, 21));
+        label_137->setMaximumSize(QSize(24, 21));
+
+        gridLayout_20->addWidget(label_137, 0, 14, 1, 1);
+
+        current_Ic_2 = new QLabel(groupBox_6);
+        current_Ic_2->setObjectName(QString::fromUtf8("current_Ic_2"));
+        current_Ic_2->setMinimumSize(QSize(54, 21));
+        current_Ic_2->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_Ic_2, 2, 9, 1, 1);
+
+        current_Ic_5 = new QLabel(groupBox_6);
+        current_Ic_5->setObjectName(QString::fromUtf8("current_Ic_5"));
+        current_Ic_5->setMinimumSize(QSize(54, 21));
+        current_Ic_5->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_Ic_5, 2, 15, 1, 1);
+
+        current_Ic_7 = new QLabel(groupBox_6);
+        current_Ic_7->setObjectName(QString::fromUtf8("current_Ic_7"));
+        current_Ic_7->setMinimumSize(QSize(54, 21));
+        current_Ic_7->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_Ic_7, 2, 19, 1, 1);
+
+        label_123 = new QLabel(groupBox_6);
+        label_123->setObjectName(QString::fromUtf8("label_123"));
+        label_123->setMinimumSize(QSize(24, 21));
+        label_123->setMaximumSize(QSize(24, 21));
+
+        gridLayout_20->addWidget(label_123, 0, 6, 1, 1);
+
+        current_Ib_2 = new QLabel(groupBox_6);
+        current_Ib_2->setObjectName(QString::fromUtf8("current_Ib_2"));
+        current_Ib_2->setMinimumSize(QSize(54, 21));
+        current_Ib_2->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_Ib_2, 1, 9, 1, 1);
+
+        current_Ic_6 = new QLabel(groupBox_6);
+        current_Ic_6->setObjectName(QString::fromUtf8("current_Ic_6"));
+        current_Ic_6->setMinimumSize(QSize(54, 21));
+        current_Ic_6->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_Ic_6, 2, 17, 1, 1);
+
+        current_Ia_6 = new QLabel(groupBox_6);
+        current_Ia_6->setObjectName(QString::fromUtf8("current_Ia_6"));
+        current_Ia_6->setMinimumSize(QSize(54, 21));
+        current_Ia_6->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_Ia_6, 0, 17, 1, 1);
+
+        energy_c = new QLabel(groupBox_6);
+        energy_c->setObjectName(QString::fromUtf8("energy_c"));
+        energy_c->setMinimumSize(QSize(54, 21));
+        energy_c->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(energy_c, 2, 5, 1, 1);
+
+        label_118 = new QLabel(groupBox_6);
+        label_118->setObjectName(QString::fromUtf8("label_118"));
+        label_118->setMinimumSize(QSize(16, 21));
+        label_118->setMaximumSize(QSize(16, 21));
+
+        gridLayout_20->addWidget(label_118, 1, 2, 1, 1);
+
+        current_a = new QLabel(groupBox_6);
+        current_a->setObjectName(QString::fromUtf8("current_a"));
+        current_a->setMinimumSize(QSize(54, 21));
+        current_a->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_a, 1, 1, 1, 1);
+
+        label_145 = new QLabel(groupBox_6);
+        label_145->setObjectName(QString::fromUtf8("label_145"));
+        label_145->setMinimumSize(QSize(24, 21));
+        label_145->setMaximumSize(QSize(24, 21));
+
+        gridLayout_20->addWidget(label_145, 2, 20, 1, 1);
+
+        label_142 = new QLabel(groupBox_6);
+        label_142->setObjectName(QString::fromUtf8("label_142"));
+        label_142->setMinimumSize(QSize(24, 21));
+        label_142->setMaximumSize(QSize(24, 21));
+
+        gridLayout_20->addWidget(label_142, 2, 18, 1, 1);
+
+        current_Ia_3 = new QLabel(groupBox_6);
+        current_Ia_3->setObjectName(QString::fromUtf8("current_Ia_3"));
+        current_Ia_3->setMinimumSize(QSize(54, 21));
+        current_Ia_3->setMaximumSize(QSize(54, 21));
+
+        gridLayout_20->addWidget(current_Ia_3, 0, 11, 1, 1);
+
+
+        gridLayout_28->addWidget(groupBox_6, 4, 1, 1, 2);
+
+        groupBox_8 = new QGroupBox(centralwidget);
+        groupBox_8->setObjectName(QString::fromUtf8("groupBox_8"));
+        gridLayout_21 = new QGridLayout(groupBox_8);
+        gridLayout_21->setObjectName(QString::fromUtf8("gridLayout_21"));
+        radioButton_loop_1 = new QRadioButton(groupBox_8);
+        radioButton_loop_1->setObjectName(QString::fromUtf8("radioButton_loop_1"));
+        radioButton_loop_1->setCheckable(true);
+        radioButton_loop_1->setChecked(false);
+        radioButton_loop_1->setAutoExclusive(false);
+
+        gridLayout_21->addWidget(radioButton_loop_1, 0, 0, 1, 1);
+
+        radioButton_loop_5 = new QRadioButton(groupBox_8);
+        radioButton_loop_5->setObjectName(QString::fromUtf8("radioButton_loop_5"));
+        radioButton_loop_5->setAutoExclusive(false);
+
+        gridLayout_21->addWidget(radioButton_loop_5, 0, 1, 1, 1);
+
+        radioButton_loop_2 = new QRadioButton(groupBox_8);
+        radioButton_loop_2->setObjectName(QString::fromUtf8("radioButton_loop_2"));
+        radioButton_loop_2->setChecked(false);
+        radioButton_loop_2->setAutoExclusive(false);
+
+        gridLayout_21->addWidget(radioButton_loop_2, 1, 0, 1, 1);
+
+        radioButton_loop_6 = new QRadioButton(groupBox_8);
+        radioButton_loop_6->setObjectName(QString::fromUtf8("radioButton_loop_6"));
+        radioButton_loop_6->setAutoExclusive(false);
+
+        gridLayout_21->addWidget(radioButton_loop_6, 1, 1, 1, 1);
+
+        radioButton_loop_3 = new QRadioButton(groupBox_8);
+        radioButton_loop_3->setObjectName(QString::fromUtf8("radioButton_loop_3"));
+        radioButton_loop_3->setAutoExclusive(false);
+
+        gridLayout_21->addWidget(radioButton_loop_3, 2, 0, 1, 1);
+
+        radioButton_loop_7 = new QRadioButton(groupBox_8);
+        radioButton_loop_7->setObjectName(QString::fromUtf8("radioButton_loop_7"));
+        radioButton_loop_7->setAutoExclusive(false);
+
+        gridLayout_21->addWidget(radioButton_loop_7, 2, 1, 1, 1);
+
+        radioButton_loop_4 = new QRadioButton(groupBox_8);
+        radioButton_loop_4->setObjectName(QString::fromUtf8("radioButton_loop_4"));
+        radioButton_loop_4->setAutoExclusive(false);
+
+        gridLayout_21->addWidget(radioButton_loop_4, 3, 0, 1, 1);
+
+        radioButton_loop_8 = new QRadioButton(groupBox_8);
+        radioButton_loop_8->setObjectName(QString::fromUtf8("radioButton_loop_8"));
+        radioButton_loop_8->setCheckable(true);
+        radioButton_loop_8->setChecked(false);
+        radioButton_loop_8->setAutoExclusive(false);
+
+        gridLayout_21->addWidget(radioButton_loop_8, 3, 1, 1, 1);
+
+
+        gridLayout_28->addWidget(groupBox_8, 4, 3, 1, 1);
 
         device_information->setCentralWidget(centralwidget);
         menubar = new QMenuBar(device_information);
@@ -2607,7 +2616,6 @@ public:
 
         retranslateUi(device_information);
 
-        environment->setCurrentIndex(3);
         tabWidget_plan_7->setCurrentIndex(0);
         tabWidget_plan_3->setCurrentIndex(0);
         tabWidget_plan_6->setCurrentIndex(0);
@@ -2615,7 +2623,8 @@ public:
         tabWidget_plan_2->setCurrentIndex(0);
         tabWidget_plan_4->setCurrentIndex(0);
         tabWidget_plan_5->setCurrentIndex(0);
-        tabWidget_plan_1->setCurrentIndex(0);
+        tabWidget_plan_1->setCurrentIndex(1);
+        environment->setCurrentIndex(3);
 
 
         QMetaObject::connectSlotsByName(device_information);
@@ -2669,113 +2678,12 @@ public:
         rel_num->setText(QString());
         label_92->setText(QCoreApplication::translate("device_information", "RT", nullptr));
         RT->setText(QString());
+        RT_2->setText(QString());
         set_btn_rel_num->setText(QCoreApplication::translate("device_information", "set", nullptr));
         groupBox_15->setTitle(QCoreApplication::translate("device_information", "other para", nullptr));
         label_93->setText(QCoreApplication::translate("device_information", "timeZone", nullptr));
         timeZone->setText(QString());
         set_btn_other_para->setText(QCoreApplication::translate("device_information", "set", nullptr));
-        environment->setTabText(environment->indexOf(env), QCoreApplication::translate("device_information", "env", nullptr));
-        environment->setTabText(environment->indexOf(angle), QCoreApplication::translate("device_information", "angle", nullptr));
-        environment->setTabText(environment->indexOf(well_lid), QCoreApplication::translate("device_information", "well lid", nullptr));
-        environment->setTabText(environment->indexOf(switch_in), QCoreApplication::translate("device_information", "switch", nullptr));
-        groupBox_11->setTitle(QCoreApplication::translate("device_information", "sensor user", nullptr));
-        sb_windspeed->setText(QCoreApplication::translate("device_information", "\346\220\234\345\215\232\351\243\216\351\200\23701", nullptr));
-        yn_temp->setText(QCoreApplication::translate("device_information", "\350\200\230\345\206\234\346\270\251\346\271\277\345\272\24615", nullptr));
-        sb_winddir->setText(QCoreApplication::translate("device_information", "\346\220\234\345\215\232\351\243\216\345\220\22102", nullptr));
-        yn_all_UV->setText(QCoreApplication::translate("device_information", "\350\200\230\345\206\234\350\276\220\345\260\20416", nullptr));
-        sb_temp->setText(QCoreApplication::translate("device_information", "\346\220\234\345\215\232\346\270\251\346\271\277\345\272\24603", nullptr));
-        yn_all_1a->setText(QCoreApplication::translate("device_information", "\350\200\230\345\206\234\345\244\232\345\220\210\344\270\2001A", nullptr));
-        ml_angle->setText(QCoreApplication::translate("device_information", "\351\273\230\345\276\213\345\200\276\350\247\2220A", nullptr));
-        yn_all_ff->setText(QCoreApplication::translate("device_information", "\350\200\230\345\206\234\345\244\232\345\220\210\344\270\200FF", nullptr));
-        ml_well_lid->setText(QCoreApplication::translate("device_information", "\351\273\230\345\276\213\344\272\225\347\233\2260C", nullptr));
-        yn_xf900_all_ff->setText(QCoreApplication::translate("device_information", "\350\200\230\345\206\234XF900 1BF", nullptr));
-        jf_door->setText(QCoreApplication::translate("device_information", "\351\207\221\345\274\227\351\227\250\351\224\20120", nullptr));
-        th_sun->setText(QCoreApplication::translate("device_information", "\345\244\251\345\220\210\345\205\211\347\205\247CC", nullptr));
-        th_temp->setText(QCoreApplication::translate("device_information", "\345\244\251\345\220\210\346\270\251\346\271\277\345\272\24666", nullptr));
-        lk_sun->setText(QCoreApplication::translate("device_information", "\350\223\235\346\216\247\345\205\211\347\205\24704", nullptr));
-        th_aqi->setText(QCoreApplication::translate("device_information", "\345\244\251\345\220\210\347\251\272\346\260\2248A", nullptr));
-        set_btn_sensor_use->setText(QCoreApplication::translate("device_information", "set", nullptr));
-        th_wind->setText(QCoreApplication::translate("device_information", "\345\244\251\345\220\210\351\243\216\351\200\237\345\220\221C8", nullptr));
-        btn_plan_refresh->setText(QCoreApplication::translate("device_information", "plan refresh", nullptr));
-        btn_env_refresh->setText(QCoreApplication::translate("device_information", "env refresh", nullptr));
-        btn_ele_refresh->setText(QCoreApplication::translate("device_information", "ele refresh", nullptr));
-        btn_loopsta_refresh->setText(QCoreApplication::translate("device_information", "loop refresh", nullptr));
-        groupBox_6->setTitle(QCoreApplication::translate("device_information", "electric param", nullptr));
-        label_122->setText(QCoreApplication::translate("device_information", "Ec\357\274\232", nullptr));
-        current_c->setText(QString());
-        current_Ia_1->setText(QString());
-        label_132->setText(QCoreApplication::translate("device_information", "Ib4\357\274\232", nullptr));
-        voltage_b->setText(QString());
-        label_120->setText(QCoreApplication::translate("device_information", "Vc\357\274\232", nullptr));
-        label_124->setText(QCoreApplication::translate("device_information", "Ib1\357\274\232", nullptr));
-        current_Ib_4->setText(QString());
-        current_Ib_8->setText(QString());
-        label_144->setText(QCoreApplication::translate("device_information", "Ib8\357\274\232", nullptr));
-        label_117->setText(QCoreApplication::translate("device_information", "Vb\357\274\232", nullptr));
-        current_Ib_7->setText(QString());
-        label_146->setText(QCoreApplication::translate("device_information", "Ia8\357\274\232", nullptr));
-        label_141->setText(QCoreApplication::translate("device_information", "Ib7\357\274\232", nullptr));
-        voltage_a->setText(QString());
-        label_125->setText(QCoreApplication::translate("device_information", "Ic1\357\274\232", nullptr));
-        current_Ia_8->setText(QString());
-        energy_a->setText(QString());
-        label_126->setText(QCoreApplication::translate("device_information", "Ib2\357\274\232", nullptr));
-        label_139->setText(QCoreApplication::translate("device_information", "Ic6\357\274\232", nullptr));
-        label_127->setText(QCoreApplication::translate("device_information", "Ic2\357\274\232", nullptr));
-        current_Ib_3->setText(QString());
-        label_140->setText(QCoreApplication::translate("device_information", "Ia6\357\274\232", nullptr));
-        current_Ia_4->setText(QString());
-        label_133->setText(QCoreApplication::translate("device_information", "Ic4\357\274\232", nullptr));
-        current_Ib_5->setText(QString());
-        label_130->setText(QCoreApplication::translate("device_information", "Ic3\357\274\232", nullptr));
-        current_Ic_3->setText(QString());
-        current_Ib_6->setText(QString());
-        current_Ic_4->setText(QString());
-        voltage_c->setText(QString());
-        label_134->setText(QCoreApplication::translate("device_information", "Ia4\357\274\232", nullptr));
-        current_Ic_8->setText(QString());
-        label_128->setText(QCoreApplication::translate("device_information", "Ia2\357\274\232", nullptr));
-        label_119->setText(QCoreApplication::translate("device_information", "Eb\357\274\232", nullptr));
-        label_136->setText(QCoreApplication::translate("device_information", "Ic5\357\274\232", nullptr));
-        current_Ia_7->setText(QString());
-        label_116->setText(QCoreApplication::translate("device_information", "Ia\357\274\232", nullptr));
-        current_b->setText(QString());
-        energy_b->setText(QString());
-        label_114->setText(QCoreApplication::translate("device_information", "Va\357\274\232", nullptr));
-        label_121->setText(QCoreApplication::translate("device_information", "Ic\357\274\232", nullptr));
-        label_129->setText(QCoreApplication::translate("device_information", "Ib3\357\274\232", nullptr));
-        label_131->setText(QCoreApplication::translate("device_information", "Ia3\357\274\232", nullptr));
-        current_Ia_5->setText(QString());
-        label_135->setText(QCoreApplication::translate("device_information", "Ib5\357\274\232", nullptr));
-        label_143->setText(QCoreApplication::translate("device_information", "Ia7\357\274\232", nullptr));
-        current_Ib_1->setText(QString());
-        current_Ia_2->setText(QString());
-        label_115->setText(QCoreApplication::translate("device_information", "Ea\357\274\232", nullptr));
-        label_138->setText(QCoreApplication::translate("device_information", "Ib6\357\274\232", nullptr));
-        current_Ic_1->setText(QString());
-        label_137->setText(QCoreApplication::translate("device_information", "Ia5\357\274\232", nullptr));
-        current_Ic_2->setText(QString());
-        current_Ic_5->setText(QString());
-        current_Ic_7->setText(QString());
-        label_123->setText(QCoreApplication::translate("device_information", "Ia1\357\274\232", nullptr));
-        current_Ib_2->setText(QString());
-        current_Ic_6->setText(QString());
-        current_Ia_6->setText(QString());
-        energy_c->setText(QString());
-        label_118->setText(QCoreApplication::translate("device_information", "Ib\357\274\232", nullptr));
-        current_a->setText(QString());
-        label_145->setText(QCoreApplication::translate("device_information", "Ic8\357\274\232", nullptr));
-        label_142->setText(QCoreApplication::translate("device_information", "Ic7\357\274\232", nullptr));
-        current_Ia_3->setText(QString());
-        groupBox_8->setTitle(QCoreApplication::translate("device_information", "loop control", nullptr));
-        radioButton_loop_1->setText(QCoreApplication::translate("device_information", "loop 1", nullptr));
-        radioButton_loop_5->setText(QCoreApplication::translate("device_information", "loop 5", nullptr));
-        radioButton_loop_2->setText(QCoreApplication::translate("device_information", "loop 2", nullptr));
-        radioButton_loop_6->setText(QCoreApplication::translate("device_information", "loop 6", nullptr));
-        radioButton_loop_3->setText(QCoreApplication::translate("device_information", "loop 3", nullptr));
-        radioButton_loop_7->setText(QCoreApplication::translate("device_information", "loop 7", nullptr));
-        radioButton_loop_4->setText(QCoreApplication::translate("device_information", "loop 4", nullptr));
-        radioButton_loop_8->setText(QCoreApplication::translate("device_information", "loop 8", nullptr));
         groupBox_5->setTitle(QCoreApplication::translate("device_information", "plan", nullptr));
         groupBox_plan_7->setTitle(QCoreApplication::translate("device_information", "plan 7", nullptr));
         en_t_plan_7->setText(QCoreApplication::translate("device_information", "EN", nullptr));
@@ -2897,6 +2805,108 @@ public:
         label_25->setText(QCoreApplication::translate("device_information", "lux:", nullptr));
         tabWidget_plan_1->setTabText(tabWidget_plan_1->indexOf(sun_plan_1), QCoreApplication::translate("device_information", "sun_plan", nullptr));
         set_btn_plan_1->setText(QCoreApplication::translate("device_information", "set", nullptr));
+        environment->setTabText(environment->indexOf(env), QCoreApplication::translate("device_information", "env", nullptr));
+        environment->setTabText(environment->indexOf(angle), QCoreApplication::translate("device_information", "angle", nullptr));
+        environment->setTabText(environment->indexOf(well_lid), QCoreApplication::translate("device_information", "well lid", nullptr));
+        environment->setTabText(environment->indexOf(switch_in), QCoreApplication::translate("device_information", "switch", nullptr));
+        groupBox_11->setTitle(QCoreApplication::translate("device_information", "sensor user", nullptr));
+        sb_windspeed->setText(QCoreApplication::translate("device_information", "\346\220\234\345\215\232\351\243\216\351\200\23701", nullptr));
+        yn_temp->setText(QCoreApplication::translate("device_information", "\350\200\230\345\206\234\346\270\251\346\271\277\345\272\24615", nullptr));
+        sb_winddir->setText(QCoreApplication::translate("device_information", "\346\220\234\345\215\232\351\243\216\345\220\22102", nullptr));
+        yn_all_UV->setText(QCoreApplication::translate("device_information", "\350\200\230\345\206\234\350\276\220\345\260\20416", nullptr));
+        sb_temp->setText(QCoreApplication::translate("device_information", "\346\220\234\345\215\232\346\270\251\346\271\277\345\272\24603", nullptr));
+        yn_all_1a->setText(QCoreApplication::translate("device_information", "\350\200\230\345\206\234\345\244\232\345\220\210\344\270\2001A", nullptr));
+        ml_angle->setText(QCoreApplication::translate("device_information", "\351\273\230\345\276\213\345\200\276\350\247\2220A", nullptr));
+        yn_all_ff->setText(QCoreApplication::translate("device_information", "\350\200\230\345\206\234\345\244\232\345\220\210\344\270\200FF", nullptr));
+        ml_well_lid->setText(QCoreApplication::translate("device_information", "\351\273\230\345\276\213\344\272\225\347\233\2260C", nullptr));
+        yn_xf900_all_ff->setText(QCoreApplication::translate("device_information", "\350\200\230\345\206\234XF900 1BF", nullptr));
+        jf_door->setText(QCoreApplication::translate("device_information", "\351\207\221\345\274\227\351\227\250\351\224\20120", nullptr));
+        th_sun->setText(QCoreApplication::translate("device_information", "\345\244\251\345\220\210\345\205\211\347\205\247CC", nullptr));
+        th_temp->setText(QCoreApplication::translate("device_information", "\345\244\251\345\220\210\346\270\251\346\271\277\345\272\24666", nullptr));
+        lk_sun->setText(QCoreApplication::translate("device_information", "\350\223\235\346\216\247\345\205\211\347\205\24704", nullptr));
+        th_aqi->setText(QCoreApplication::translate("device_information", "\345\244\251\345\220\210\347\251\272\346\260\2248A", nullptr));
+        set_btn_sensor_use->setText(QCoreApplication::translate("device_information", "set", nullptr));
+        th_wind->setText(QCoreApplication::translate("device_information", "\345\244\251\345\220\210\351\243\216\351\200\237\345\220\221C8", nullptr));
+        btn_plan_refresh->setText(QCoreApplication::translate("device_information", "plan refresh", nullptr));
+        btn_env_refresh->setText(QCoreApplication::translate("device_information", "env refresh", nullptr));
+        btn_ele_refresh->setText(QCoreApplication::translate("device_information", "ele refresh", nullptr));
+        btn_loopsta_refresh->setText(QCoreApplication::translate("device_information", "loop refresh", nullptr));
+        groupBox_6->setTitle(QCoreApplication::translate("device_information", "electric param", nullptr));
+        label_122->setText(QCoreApplication::translate("device_information", "Ec\357\274\232", nullptr));
+        current_c->setText(QString());
+        current_Ia_1->setText(QString());
+        label_132->setText(QCoreApplication::translate("device_information", "Ib4\357\274\232", nullptr));
+        voltage_b->setText(QString());
+        label_120->setText(QCoreApplication::translate("device_information", "Vc\357\274\232", nullptr));
+        label_124->setText(QCoreApplication::translate("device_information", "Ib1\357\274\232", nullptr));
+        current_Ib_4->setText(QString());
+        current_Ib_8->setText(QString());
+        label_144->setText(QCoreApplication::translate("device_information", "Ib8\357\274\232", nullptr));
+        label_117->setText(QCoreApplication::translate("device_information", "Vb\357\274\232", nullptr));
+        current_Ib_7->setText(QString());
+        label_146->setText(QCoreApplication::translate("device_information", "Ia8\357\274\232", nullptr));
+        label_141->setText(QCoreApplication::translate("device_information", "Ib7\357\274\232", nullptr));
+        voltage_a->setText(QString());
+        label_125->setText(QCoreApplication::translate("device_information", "Ic1\357\274\232", nullptr));
+        current_Ia_8->setText(QString());
+        energy_a->setText(QString());
+        label_126->setText(QCoreApplication::translate("device_information", "Ib2\357\274\232", nullptr));
+        label_139->setText(QCoreApplication::translate("device_information", "Ic6\357\274\232", nullptr));
+        label_127->setText(QCoreApplication::translate("device_information", "Ic2\357\274\232", nullptr));
+        current_Ib_3->setText(QString());
+        label_140->setText(QCoreApplication::translate("device_information", "Ia6\357\274\232", nullptr));
+        current_Ia_4->setText(QString());
+        label_133->setText(QCoreApplication::translate("device_information", "Ic4\357\274\232", nullptr));
+        current_Ib_5->setText(QString());
+        label_130->setText(QCoreApplication::translate("device_information", "Ic3\357\274\232", nullptr));
+        current_Ic_3->setText(QString());
+        current_Ib_6->setText(QString());
+        current_Ic_4->setText(QString());
+        voltage_c->setText(QString());
+        label_134->setText(QCoreApplication::translate("device_information", "Ia4\357\274\232", nullptr));
+        current_Ic_8->setText(QString());
+        label_128->setText(QCoreApplication::translate("device_information", "Ia2\357\274\232", nullptr));
+        label_119->setText(QCoreApplication::translate("device_information", "Eb\357\274\232", nullptr));
+        label_136->setText(QCoreApplication::translate("device_information", "Ic5\357\274\232", nullptr));
+        current_Ia_7->setText(QString());
+        label_116->setText(QCoreApplication::translate("device_information", "Ia\357\274\232", nullptr));
+        current_b->setText(QString());
+        energy_b->setText(QString());
+        label_114->setText(QCoreApplication::translate("device_information", "Va\357\274\232", nullptr));
+        label_121->setText(QCoreApplication::translate("device_information", "Ic\357\274\232", nullptr));
+        label_129->setText(QCoreApplication::translate("device_information", "Ib3\357\274\232", nullptr));
+        label_131->setText(QCoreApplication::translate("device_information", "Ia3\357\274\232", nullptr));
+        current_Ia_5->setText(QString());
+        label_135->setText(QCoreApplication::translate("device_information", "Ib5\357\274\232", nullptr));
+        label_143->setText(QCoreApplication::translate("device_information", "Ia7\357\274\232", nullptr));
+        current_Ib_1->setText(QString());
+        current_Ia_2->setText(QString());
+        label_115->setText(QCoreApplication::translate("device_information", "Ea\357\274\232", nullptr));
+        label_138->setText(QCoreApplication::translate("device_information", "Ib6\357\274\232", nullptr));
+        current_Ic_1->setText(QString());
+        label_137->setText(QCoreApplication::translate("device_information", "Ia5\357\274\232", nullptr));
+        current_Ic_2->setText(QString());
+        current_Ic_5->setText(QString());
+        current_Ic_7->setText(QString());
+        label_123->setText(QCoreApplication::translate("device_information", "Ia1\357\274\232", nullptr));
+        current_Ib_2->setText(QString());
+        current_Ic_6->setText(QString());
+        current_Ia_6->setText(QString());
+        energy_c->setText(QString());
+        label_118->setText(QCoreApplication::translate("device_information", "Ib\357\274\232", nullptr));
+        current_a->setText(QString());
+        label_145->setText(QCoreApplication::translate("device_information", "Ic8\357\274\232", nullptr));
+        label_142->setText(QCoreApplication::translate("device_information", "Ic7\357\274\232", nullptr));
+        current_Ia_3->setText(QString());
+        groupBox_8->setTitle(QCoreApplication::translate("device_information", "loop control", nullptr));
+        radioButton_loop_1->setText(QCoreApplication::translate("device_information", "loop 1", nullptr));
+        radioButton_loop_5->setText(QCoreApplication::translate("device_information", "loop 5", nullptr));
+        radioButton_loop_2->setText(QCoreApplication::translate("device_information", "loop 2", nullptr));
+        radioButton_loop_6->setText(QCoreApplication::translate("device_information", "loop 6", nullptr));
+        radioButton_loop_3->setText(QCoreApplication::translate("device_information", "loop 3", nullptr));
+        radioButton_loop_7->setText(QCoreApplication::translate("device_information", "loop 7", nullptr));
+        radioButton_loop_4->setText(QCoreApplication::translate("device_information", "loop 4", nullptr));
+        radioButton_loop_8->setText(QCoreApplication::translate("device_information", "loop 8", nullptr));
         menudevice_information->setTitle(QCoreApplication::translate("device_information", "device information", nullptr));
     } // retranslateUi
 

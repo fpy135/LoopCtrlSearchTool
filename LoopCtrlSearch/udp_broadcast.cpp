@@ -226,7 +226,16 @@ void udp_broadcast::recvDataPorcess(QUdpSocket* curr_udp)
                 tmpjsonValue = rootObj.value("rel_num");
                 dev_info.dev_rel_num = tmpjsonValue.toInt();
                 tmpjsonValue = rootObj.value("RT");
-                dev_info.dev_energy_para.RT = tmpjsonValue.toInt();
+                if (tmpjsonValue.isArray()) {
+                    QJsonArray rtArray = tmpjsonValue.toArray();
+                    for (int i = 0; i < rtArray.size(); i++)
+                    {
+                        int value = rtArray.at(i).toInt();
+                        dev_info.dev_energy_para.RT[i] = value;
+                    }
+
+                }
+//                dev_info.dev_energy_para.RT = tmpjsonValue.toInt();
                 tmpjsonValue = rootObj.value("timeZone");
                 dev_info.dev_other_para.timeZome = tmpjsonValue.toInt();
                 tmpjsonValue = rootObj.value("sw");
@@ -593,12 +602,21 @@ void udp_broadcast::recvDataPorcess(QUdpSocket* curr_udp)
                 rel_num = tmpjsonValue.toInt();
                 emit this->udp_recvRelNum(rel_num);
             }
-            else if(dev_cmd.compare(RelNumRpt_cmd) == 0)
+            else if(dev_cmd.compare(EnergyParaRpt_cmd) == 0)
             {
                 dev_EnergyPara energy_para;
                 // 获取子 JSON 对象
                 tmpjsonValue = rootObj.value("RT");
-                energy_para.RT = tmpjsonValue.toInt();
+                if (tmpjsonValue.isArray()) {
+                    QJsonArray rtArray = tmpjsonValue.toArray();
+                    for (int i = 0; i < rtArray.size(); i++)
+                    {
+                        int value = rtArray.at(i).toInt();
+                        dev_info.dev_energy_para.RT[i] = value;
+                        energy_para.RT[i] = value;
+                    }
+
+                }
                 emit this->udp_recvEnergyPara(energy_para);
             }
             else if(dev_cmd.compare(ServerRpt_cmd) == 0)

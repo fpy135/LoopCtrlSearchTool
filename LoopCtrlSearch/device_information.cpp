@@ -332,7 +332,8 @@ void device_information::rel_num_show(uint8_t rel_num)
 void device_information::energy_para_show(dev_EnergyPara energy_para)
 {
     currdevinfo.dev_energy_para = energy_para;
-    this->ui->RT->setText(QString::number(currdevinfo.dev_energy_para.RT));
+    this->ui->RT->setText(QString::number(currdevinfo.dev_energy_para.RT[0]));
+    this->ui->RT_2->setText(QString::number(currdevinfo.dev_energy_para.RT[1]));
 }
 
 void device_information::ele_show(dev_EleInfo *dev_ele)
@@ -444,7 +445,8 @@ void device_information::server_show(devServerInfo dev_server)
     this->ui->dev_id->setText(currdevinfo.dev_id);
     this->ui->net_type->setText(currdevinfo.dev_nettype);
     this->ui->rel_num->setText(QString::number(currdevinfo.dev_rel_num));
-    this->ui->RT->setText(QString::number(currdevinfo.dev_energy_para.RT));
+    this->ui->RT->setText(QString::number(currdevinfo.dev_energy_para.RT[0]));
+    this->ui->RT_2->setText(QString::number(currdevinfo.dev_energy_para.RT[1]));
     this->ui->server_ip->setText(currdevinfo.dev_server.dev_serverip);
     this->ui->server_port->setText(QString::number(currdevinfo.dev_server.dev_serverport));
     this->ui->username->setText(currdevinfo.dev_server.dev_server_username);
@@ -684,11 +686,15 @@ void device_information::set_rel_num(void)
 void device_information::set_energy_para(void)
 {
     QJsonObject dev_json;
+    QJsonArray rtArray;
+    rtArray.append(this->ui->RT->text().toInt());
+    rtArray.append(this->ui->RT_2->text().toInt());
     // 插入元素，对应键值对
     dev_json.insert("reqid", 1);
     dev_json.insert("devid", currdevinfo.dev_id);
     dev_json.insert("cmd", EnergyParaSet_cmd);
-    dev_json.insert("RT", this->ui->RT->text().toInt());
+//    dev_json.insert("RT", this->ui->RT->text().toInt());
+    dev_json.insert("RT", rtArray);
     QJsonDocument jsonDoc(dev_json);
     QByteArray jsonbyte = jsonDoc.toJson(QJsonDocument::Compact);
 #if USE_UDP_ONE_BY_ONE
